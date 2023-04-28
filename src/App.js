@@ -4,7 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/Other/ScrollToTop";
 import { links } from "./utils/routes_constants";
 
-import { Homepage, AboutPage, ContactPage, Error } from "./pages";
+import {
+	Homepage,
+	AboutPage,
+	ContactPage,
+	Error,
+	LoginPage,
+	RegisterPage,
+} from "./pages";
 import { Sidebar, Navbar } from "./components";
 
 function App() {
@@ -22,6 +29,14 @@ function App() {
 				<Route
 					path={links.at(2).path}
 					element={<ContactPage></ContactPage>}
+				></Route>
+				<Route
+					path={links.at(3).path}
+					element={<RegisterPage></RegisterPage>}
+				></Route>
+				<Route
+					path={links.at(4).path}
+					element={<LoginPage></LoginPage>}
 				></Route>
 				<Route path="*" element={<Error></Error>}></Route>
 			</Routes>
