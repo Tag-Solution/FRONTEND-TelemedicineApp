@@ -41,11 +41,11 @@
 	--FontColorDark: #181b20;
 	--FontColorGrey: #656a70;
 	/* Utils */
-	--MainTransition: all 0.3s linear;
-	--TransitionFast: all 0.24s linear;
+	--MainTransition: all 0.24s linear;
+	--TransitionFast: all 0.2s linear;
 	--ShadowLighter: 0px 3px 9px rgba(0, 0, 0, 0.05);
 	--ShadowLight: 0px 3px 9px rgba(0, 0, 0, 0.1);
-	--ShadowDark: 0px 3px 9px rgba(0, 0, 0, 0.23);
+	--ShadowDark: 0px 2px 4px rgba(0, 0, 0, 0.15);
 	--WidthMax: 1350px;
 	--WidthFixed: 620px;
 }
@@ -119,23 +119,22 @@ Pages
 Buttons
 */
 .btn-white {
+	outline: none;
+	border: 1px solid var(--ColorSemiCrimson);
+	border-radius: 0.2rem;
 	background: var(--ColorWhite);
-	color: var(--ColorPiel);
+	color: var(--ColorSemiCrimson);
 	padding: 0.375rem 0.75rem;
-	display: inline-block;
 	font-family: var(--FontLora);
 	font-weight: 200;
-	text-transform: uppercase;
 	font-size: 1.2rem;
 	letter-spacing: 0.7px;
-	border-radius: 0.2rem;
-	border-color: transparent;
-	box-shadow: var(--ShadowDark);
+	text-transform: uppercase;
 	cursor: pointer;
 	transition: var(--MainTransition);
 }
 .btn-white:hover {
-	background: var(--ColorBlack-85);
+	background: var(--ColorSemiCrimson);
 	color: var(--ColorWhite);
 }
 .btn-fill {
