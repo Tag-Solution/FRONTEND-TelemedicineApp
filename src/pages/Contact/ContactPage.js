@@ -3,8 +3,12 @@ import { Wrapper } from "./ContactPage.styles";
 
 const ContactPage = () => {
 	return (
-		<Wrapper>
-			<h2>Telemedicine App ContactPage</h2>
+		<Wrapper className="section">
+			<div className="section-center">
+				<div className="section-title">
+					<h2>Contact</h2>
+				</div>
+			</div>
 		</Wrapper>
 	);
 };

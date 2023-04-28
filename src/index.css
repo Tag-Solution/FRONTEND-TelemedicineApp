@@ -41,11 +41,11 @@
 	--FontColorDark: #181b20;
 	--FontColorGrey: #656a70;
 	/* Utils */
-	--MainTransition: all 0.3s linear;
-	--TransitionFast: all 0.24s linear;
+	--MainTransition: all 0.24s linear;
+	--TransitionFast: all 0.2s linear;
 	--ShadowLighter: 0px 3px 9px rgba(0, 0, 0, 0.05);
 	--ShadowLight: 0px 3px 9px rgba(0, 0, 0, 0.1);
-	--ShadowDark: 0px 3px 9px rgba(0, 0, 0, 0.23);
+	--ShadowDark: 0px 2px 4px rgba(0, 0, 0, 0.15);
 	--WidthMax: 1350px;
 	--WidthFixed: 620px;
 }
@@ -67,10 +67,34 @@ hr {
 	border: none;
 	border-top: 1px solid var(--ColorFooterDivider);
 }
+/*
+Pages
+*/
+.section {
+	height: 100%;
+	padding: 3rem 0rem;
+}
 .section-center {
 	width: 90%;
 	margin: 0 auto;
 }
+.section .section-center .section-title {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+.section .section-center .section-title span {
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: var(--ColorPiel);
+}
+.section .section-center .section-title h2 {
+	font-weight: 300;
+	margin-top: 0.3rem;
+	font-size: 2.2rem;
+	letter-spacing: 1.2px;
+}
+
 .page-height100-desk {
 	/* Nav: 10rem; Footer: 5rem */
 	min-height: calc(100vh - 15rem);
@@ -79,24 +103,27 @@ hr {
 	/* Nav: 6rem; Footer: 5rem */
 	min-height: calc(100vh - 11rem);
 }
+
+/*
+Buttons
+*/
 .btn-white {
+	outline: none;
+	border: 1px solid var(--ColorSemiCrimson);
+	border-radius: 0.2rem;
 	background: var(--ColorWhite);
-	color: var(--ColorPiel);
+	color: var(--ColorSemiCrimson);
 	padding: 0.375rem 0.75rem;
-	display: inline-block;
 	font-family: var(--FontLora);
 	font-weight: 200;
-	text-transform: uppercase;
 	font-size: 1.2rem;
 	letter-spacing: 0.7px;
-	border-radius: 0.2rem;
-	border-color: transparent;
-	box-shadow: var(--ShadowDark);
+	text-transform: uppercase;
 	cursor: pointer;
 	transition: var(--MainTransition);
 }
 .btn-white:hover {
-	background: var(--ColorBlack-85);
+	background: var(--ColorSemiCrimson);
 	color: var(--ColorWhite);
 }
 .btn-fill {
@@ -115,6 +142,63 @@ hr {
 	box-shadow: var(--ShadowDark);
 }
 
+/*
+Forms
+*/
+.single-input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.6rem;
+}
+.single-input label {
+	color: var(--ColorBlack);
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding-left: 0.25rem;
+}
+.single-input input {
+	border: 1px solid lightgray;
+	border-radius: 0.5rem;
+	height: 2.7rem;
+	padding-left: 0.7rem;
+	font-size: 1rem;
+}
+.single-input div {
+	color: var(--ColorSemiCrimson);
+	margin-top: 0.3rem;
+}
+.single-input input:focus {
+	border: 1px solid var(--ColorBlack) !important;
+}
+.single-input input::placeholder {
+	font-weight: 400;
+	font-size: 0.9rem;
+	opacity: 0.75;
+}
+
+.single-textarea {
+	display: flex;
+	flex-direction: column;
+}
+.single-textarea label {
+	color: var(--ColorBlack);
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding-left: 0.25rem;
+}
+.single-textarea textarea {
+	resize: none;
+	border: 1px solid lightgray;
+	border-radius: 0.5rem;
+	padding-left: 0.7rem;
+	padding-top: 0.5rem;
+}
+.single-textarea textarea::placeholder {
+	font-weight: 400;
+	font-size: 0.9rem;
+	opacity: 0.75;
+}
+
 /* ======================================================================== */
 /* 3. Queries */
 /* ======================================================================== */
@@ -125,14 +209,19 @@ hr {
     1150px
   +
 */
-/* 
-::: Nav and Footer Heights ::::
-    Mobile: 10rem;
-    768px: 11.3rem
-    980px: 11.5rem;
-*/
+
 @media screen and (min-width: 768px) {
+	.section {
+		padding-top: 5rem;
+	}
 	.section-center {
+		max-width: 1300px;
 		width: 88%;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.section {
+		padding-top: 9rem;
 	}
 }

@@ -4,7 +4,7 @@ import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from "./actions";
 import reducer from "../reducers/navigation_reducer";
 
 const initialState = {
-	isSidebarOpen: true,
+	isSidebarOpen: false,
 };
 
 const NavigationContext = React.createContext();

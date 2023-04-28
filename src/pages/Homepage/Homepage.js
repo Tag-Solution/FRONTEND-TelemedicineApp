@@ -3,8 +3,12 @@ import { Wrapper } from "./Homepage.styles";
 
 const Homepage = () => {
 	return (
-		<Wrapper>
-			<h2>Telemedicine App Homepage</h2>
+		<Wrapper className="section">
+			<div className="section-center">
+				<div className="section-title">
+					<h2>Homepage</h2>
+				</div>
+			</div>
 		</Wrapper>
 	);
 };

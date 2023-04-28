@@ -17,4 +17,16 @@ export const links = [
 		path: "/contact",
 		icon: null,
 	},
+	{
+		id: 4,
+		text: "Register",
+		path: "/auth/register",
+		icon: null,
+	},
+	{
+		id: 5,
+		text: "Login",
+		path: "/auth/login",
+		icon: null,
+	},
 ];
