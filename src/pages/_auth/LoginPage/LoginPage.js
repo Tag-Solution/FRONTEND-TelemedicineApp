@@ -6,7 +6,7 @@ import { LoginForm } from "../../../components";
 
 const LoginPage = () => {
 	return (
-		<Wrapper className="section page-sect">
+		<Wrapper className="section">
 			<div className="section-center">
 				<div className="section-title">
 					<h2>Login</h2>

@@ -3,8 +3,12 @@ import { Wrapper } from "./Error.styles";
 
 const Homepage = () => {
 	return (
-		<Wrapper className="omit-nav">
-			<h2>404 Page not found</h2>
+		<Wrapper className="section">
+			<div className="section-center">
+				<div className="section-title">
+					<h2>404 - Page not found</h2>
+				</div>
+			</div>
 		</Wrapper>
 	);
 };

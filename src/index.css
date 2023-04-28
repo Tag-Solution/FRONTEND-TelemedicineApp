@@ -94,18 +94,7 @@ Pages
 	font-size: 2.2rem;
 	letter-spacing: 1.2px;
 }
-.page-sect {
-	padding-top: 5rem;
-	min-height: 80vh;
-}
-.page-sect .section-center .section-title {
-	padding-top: 2rem;
-	padding-bottom: 3rem;
-}
 
-.omit-nav {
-	margin-top: 4.7rem;
-}
 .page-height100-desk {
 	/* Nav: 10rem; Footer: 5rem */
 	min-height: calc(100vh - 15rem);
@@ -220,14 +209,19 @@ Forms
     1150px
   +
 */
-/* 
-::: Nav and Footer Heights ::::
-    Mobile: 10rem;
-    768px: 11.3rem
-    980px: 11.5rem;
-*/
+
 @media screen and (min-width: 768px) {
+	.section {
+		padding-top: 5rem;
+	}
 	.section-center {
+		max-width: 1300px;
 		width: 88%;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.section {
+		padding-top: 9rem;
 	}
 }
