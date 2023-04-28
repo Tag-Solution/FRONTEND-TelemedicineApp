@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.3ebf4995.css",
-    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.cc5802ec.js",
+    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.2c02517e.css",
+    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.d8005f49.js",
     "index.html": "/FRONTEND-TelemedicineApp/index.html",
-    "main.3ebf4995.css.map": "/FRONTEND-TelemedicineApp/static/css/main.3ebf4995.css.map",
-    "main.cc5802ec.js.map": "/FRONTEND-TelemedicineApp/static/js/main.cc5802ec.js.map"
+    "main.2c02517e.css.map": "/FRONTEND-TelemedicineApp/static/css/main.2c02517e.css.map",
+    "main.d8005f49.js.map": "/FRONTEND-TelemedicineApp/static/js/main.d8005f49.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ebf4995.css",
-    "static/js/main.cc5802ec.js"
+    "static/css/main.2c02517e.css",
+    "static/js/main.d8005f49.js"
   ]
 }
