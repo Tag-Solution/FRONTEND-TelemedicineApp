@@ -69,7 +69,6 @@ const NavContainer = styled.nav`
 		display: none;
 	}
 	@media screen and (min-width: 768px) {
-		height: 6.3rem;
 		.nav-toggle {
 			svg {
 				font-size: 1.8rem;
@@ -77,7 +76,6 @@ const NavContainer = styled.nav`
 		}
 	}
 	@media screen and (min-width: 980px) {
-		height: 5.5rem;
 		box-shadow: var(--ShadowLight);
 		position: fixed;
 		top: 0;

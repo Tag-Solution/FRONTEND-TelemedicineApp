@@ -3,7 +3,7 @@ import { Wrapper } from "./ContactPage.styles";
 
 const ContactPage = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="omit-nav">
 			<h2>Telemedicine App ContactPage</h2>
 		</Wrapper>
 	);

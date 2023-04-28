@@ -3,7 +3,7 @@ import { Wrapper } from "./Error.styles";
 
 const Homepage = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="omit-nav">
 			<h2>404 Page not found</h2>
 		</Wrapper>
 	);

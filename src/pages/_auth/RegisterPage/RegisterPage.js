@@ -6,8 +6,12 @@ import { RegisterForm } from "../../../components";
 
 const RegisterPage = () => {
 	return (
-		<Wrapper>
-			RegisterPage
+		<Wrapper className="section page-sect">
+			<div className="section-center">
+				<div className="section-title">
+					<h2>Registro</h2>
+				</div>
+			</div>
 			<RegisterForm></RegisterForm>
 		</Wrapper>
 	);

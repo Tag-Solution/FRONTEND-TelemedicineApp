@@ -67,9 +67,44 @@ hr {
 	border: none;
 	border-top: 1px solid var(--ColorFooterDivider);
 }
+/*
+Pages
+*/
+.section {
+	height: 100%;
+	padding: 3rem 0rem;
+}
 .section-center {
 	width: 90%;
 	margin: 0 auto;
+}
+.section .section-center .section-title {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+.section .section-center .section-title span {
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: var(--ColorPiel);
+}
+.section .section-center .section-title h2 {
+	font-weight: 300;
+	margin-top: 0.3rem;
+	font-size: 2.2rem;
+	letter-spacing: 1.2px;
+}
+.page-sect {
+	padding-top: 5rem;
+	min-height: 80vh;
+}
+.page-sect .section-center .section-title {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.omit-nav {
+	margin-top: 4.7rem;
 }
 .page-height100-desk {
 	/* Nav: 10rem; Footer: 5rem */
@@ -79,6 +114,10 @@ hr {
 	/* Nav: 6rem; Footer: 5rem */
 	min-height: calc(100vh - 11rem);
 }
+
+/*
+Buttons
+*/
 .btn-white {
 	background: var(--ColorWhite);
 	color: var(--ColorPiel);
@@ -113,6 +152,59 @@ hr {
 }
 .btn-fill:hover {
 	box-shadow: var(--ShadowDark);
+}
+
+/*
+Forms
+*/
+.single-input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.6rem;
+}
+.single-input label {
+	color: var(--ColorBlack);
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding-left: 0.25rem;
+}
+.single-input input {
+	border: 1px solid lightgray;
+	border-radius: 0.5rem;
+	height: 2.7rem;
+	padding-left: 0.7rem;
+	font-size: 1rem;
+}
+.single-input input:focus {
+	border: 1px solid var(--ColorBlack) !important;
+}
+.single-input input::placeholder {
+	font-weight: 400;
+	font-size: 0.9rem;
+	opacity: 0.75;
+}
+
+.single-textarea {
+	display: flex;
+	flex-direction: column;
+}
+.single-textarea label {
+	color: var(--ColorBlack);
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding-left: 0.25rem;
+}
+.single-textarea textarea {
+	resize: none;
+	border: 1px solid lightgray;
+	border-radius: 0.5rem;
+	padding-left: 0.7rem;
+	padding-top: 0.5rem;
+}
+.single-textarea textarea::placeholder {
+	font-weight: 400;
+	font-size: 0.9rem;
+	opacity: 0.75;
 }
 
 /* ======================================================================== */

@@ -6,7 +6,7 @@ import { LoginForm } from "../../../components";
 
 const LoginPage = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="omit-nav">
 			LoginPage
 			<LoginForm></LoginForm>
 		</Wrapper>

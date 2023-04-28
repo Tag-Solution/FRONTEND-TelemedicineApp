@@ -3,7 +3,7 @@ import { Wrapper } from "./Homepage.styles";
 
 const Homepage = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="omit-nav">
 			<h2>Telemedicine App Homepage</h2>
 		</Wrapper>
 	);
