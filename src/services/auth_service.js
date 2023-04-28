@@ -8,3 +8,11 @@ export function registerUser(body) {
 		},
 	});
 }
+
+export function loginUser(body) {
+	return AxiosConfig.post(API_LOGIN, body, {
+		validateStatus: function (status) {
+			return status < 500;
+		},
+	});
+}
