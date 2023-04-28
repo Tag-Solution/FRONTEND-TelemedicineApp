@@ -1,3 +1,8 @@
 # Telemedicine App
 
-This project was bootstrapped with [Create React App]
+### Dependencies
+
+- Axios
+- RouterDOM
+- Styled Components
+- Agora
