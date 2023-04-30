@@ -95,15 +95,6 @@ Pages
 	letter-spacing: 1.2px;
 }
 
-.page-height100-desk {
-	/* Nav: 10rem; Footer: 5rem */
-	min-height: calc(100vh - 15rem);
-}
-.page-height100-mobile {
-	/* Nav: 6rem; Footer: 5rem */
-	min-height: calc(100vh - 11rem);
-}
-
 /*
 Buttons
 */
@@ -215,7 +206,6 @@ Forms
 		padding-top: 5rem;
 	}
 	.section-center {
-		max-width: 1300px;
 		width: 88%;
 	}
 }
