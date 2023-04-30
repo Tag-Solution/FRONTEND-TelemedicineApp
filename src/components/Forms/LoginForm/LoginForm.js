@@ -7,7 +7,7 @@ import { loginUser } from "../../../services/auth_service";
 
 const LoginForm = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="form-container">
 			<Formik
 				initialValues={{
 					username: "",
@@ -29,7 +29,7 @@ const LoginForm = () => {
 						});
 				}}
 			>
-				<Form className="register-form">
+				<Form className="main-form">
 					<div className="input-block">
 						{/* Username */}
 						<div className="single-input">
@@ -44,7 +44,7 @@ const LoginForm = () => {
 							<Field name="password" />
 						</div>
 					</div>
-					<button type="submit" className="btn-white">
+					<button type="submit" className="btn-fill-primary margin-top-1p5rem">
 						Submit
 					</button>
 				</Form>

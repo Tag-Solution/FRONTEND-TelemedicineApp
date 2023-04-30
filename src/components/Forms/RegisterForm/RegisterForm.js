@@ -8,7 +8,7 @@ import { registerUser } from "../../../services/auth_service";
 
 const RegisterForm = () => {
 	return (
-		<Wrapper>
+		<Wrapper className="form-container">
 			<Formik
 				initialValues={{
 					firstName: "",
@@ -41,7 +41,7 @@ const RegisterForm = () => {
 						});
 				}}
 			>
-				<Form className="register-form">
+				<Form className="main-form">
 					<div className="input-block">
 						{/* Email */}
 						<div className="single-input">
@@ -72,7 +72,7 @@ const RegisterForm = () => {
 							<ErrorMessage name="lastName" component="div" />
 						</div>
 					</div>
-					<button type="submit" className="btn-white">
+					<button type="submit" className="btn-fill-primary margin-top-1p5rem">
 						Submit
 					</button>
 				</Form>

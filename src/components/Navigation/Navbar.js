@@ -77,7 +77,6 @@ const NavContainer = styled.nav`
 		}
 	}
 	@media screen and (min-width: 980px) {
-		box-shadow: var(--ShadowLight);
 		position: fixed;
 		top: 0;
 		.nav-toggle {
@@ -96,18 +95,17 @@ const NavContainer = styled.nav`
 				margin: 0 0.5rem;
 			}
 			a {
-				color: var(--ColorBlack-85);
+				color: var(--ColorBlack-2);
 				font-family: var(--FontWork);
 				font-size: 1rem;
 				text-transform: capitalize;
 				letter-spacing: 0.5px;
 				padding: 0.5rem;
 				border-bottom: 1px solid transparent;
-				transition: var(--MainTransition);
-				opacity: 0.7;
+				transition: var(--TransitionMain);
 				&:hover {
-					border-bottom: 1px solid var(--ColorBlack);
-					color: var(--ColorBlack);
+					border-bottom: 1px solid var(--ColorPrimary);
+					color: var(--ColorPrimary);
 					opacity: 1;
 				}
 			}

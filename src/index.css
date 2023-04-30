@@ -13,41 +13,31 @@
 /* ======================================================================== */
 
 :root {
-	/* Colors */
-	--ColorBlack: #000000;
+	/* Primary */
+	--ColorPrimary: #6496b0;
+	--ColorPrimary-2: #96c2db;
+	--ColorPrimary-3: #e5edf1;
+	--ColorPrimary-4: #eef4f3;
+	/* Whites */
 	--ColorWhite: #ffffff;
-	--ColorBlack-1: #030303;
-	--ColorBlack-85: rgba(3, 3, 3, 0.85);
-	--ColorBlack-7: rgba(3, 3, 3, 0.7);
-	--ColorBlack-5: rgba(3, 3, 3, 0.5);
-	--ColorBlack-35: rgba(3, 3, 3, 0.35);
-	--ColorBlack-2: rgba(3, 3, 3, 0.2);
-	--ColorBlackHover: #0c0c0c;
-	--ColorPiel: #c79e88;
-	--ColorPielService: #ebebeb;
-	--ColorPielLight: #fafafa;
-	--ColorPielLight-7: #fafafaab;
-	--ColorFooterDivider: #505152;
-	--ColorFooterGrey: #d6d6d6;
-	--ColorFooterWhite: #dddddd;
-	--ColorFooterWhiteOP: #f8f8f8c9;
-	--ColorSocialIcons: #bebdbd;
-	--ColorSemiCrimson: rgb(255, 24, 70);
-	--ColorSearchInput: #dddddd83;
+	--ColorWhite-2: #fafafa;
+	--ColorWhite-3: #f0f0f0;
+	--ColorWhite-4: #e1e1e1;
+	--ColorWhite-5: #e4e7e9;
+	/* Blacks */
+	--ColorBlack: #000000;
+	--ColorBlack-2: #333333;
+	--ColorBlack-3: #454647;
+
 	/* Fonts */
 	--FontLora: "Lora", Georgia, serif;
 	--FontBebas: "Bebas Neue", Arial, Helvetica, sans-serif;
 	--FontWork: "Work Sans", Arial, Helvetica, sans-serif;
-	--FontColorDark: #181b20;
-	--FontColorGrey: #656a70;
+
 	/* Utils */
-	--MainTransition: all 0.24s linear;
-	--TransitionFast: all 0.2s linear;
-	--ShadowLighter: 0px 3px 9px rgba(0, 0, 0, 0.05);
-	--ShadowLight: 0px 3px 9px rgba(0, 0, 0, 0.1);
-	--ShadowDark: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	--TransitionMain: all 0.3s linear;
+	--TransitionFast: all 0.24s linear;
 	--WidthMax: 1350px;
-	--WidthFixed: 620px;
 }
 *,
 ::after,
@@ -65,11 +55,19 @@ ul {
 }
 hr {
 	border: none;
-	border-top: 1px solid var(--ColorFooterDivider);
+	border-top: 1px solid var(--ColorWhite-3);
 }
-/*
-Pages
-*/
+
+/* ========= */
+/* Globals */
+/* ========= */
+.margin-top-1p5rem {
+	margin-top: 2rem;
+}
+
+/* ========= */
+/* Pages */
+/* ========= */
 .section {
 	height: 100%;
 	padding: 3rem 0rem;
@@ -86,85 +84,113 @@ Pages
 	font-weight: 400;
 	font-size: 1rem;
 	letter-spacing: 2px;
-	color: var(--ColorPiel);
+	color: var(--ColorBlack-3);
 }
 .section .section-center .section-title h2 {
-	font-weight: 300;
 	margin-top: 0.3rem;
 	font-size: 2.2rem;
+	font-weight: 300;
 	letter-spacing: 1.2px;
+	color: var(--ColorBlack-2);
 }
 
-/*
-Buttons
-*/
+/* ========= */
+/* Buttons */
+/* ========= */
 .btn-white {
 	outline: none;
-	border: 1px solid var(--ColorSemiCrimson);
+	border: 1px solid var(--ColorBlack-2);
 	border-radius: 0.2rem;
-	background: var(--ColorWhite);
-	color: var(--ColorSemiCrimson);
 	padding: 0.375rem 0.75rem;
+	background: transparent;
 	font-family: var(--FontLora);
+	color: var(--ColorBlack-2);
+	text-transform: uppercase;
 	font-weight: 200;
 	font-size: 1.2rem;
 	letter-spacing: 0.7px;
-	text-transform: uppercase;
 	cursor: pointer;
-	transition: var(--MainTransition);
+	transition: var(--TransitionMain);
 }
 .btn-white:hover {
-	background: var(--ColorSemiCrimson);
+	border-color: var(--ColorPrimary);
+	background: var(--ColorPrimary);
 	color: var(--ColorWhite);
-}
-.btn-fill {
-	outline: none;
-	font-family: var(--FontWork);
-	font-size: 1.5rem;
-	text-align: center;
-	font-weight: 300;
-	background: var(--ColorPiel);
-	padding: 0.7rem 2.7rem;
-	color: var(--ColorWhite);
-	box-shadow: var(--ShadowLight);
-	transition: var(--MainTransition);
-}
-.btn-fill:hover {
-	box-shadow: var(--ShadowDark);
 }
 
-/*
-Forms
-*/
+.btn-fill-primary {
+	outline: none;
+	border: 1px solid var(--ColorPrimary);
+	border-radius: 0.2rem;
+	padding: 0.375rem 0.75rem;
+	background: var(--ColorPrimary);
+	font-family: var(--FontLora);
+	color: var(--ColorWhite);
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 1.2rem;
+	letter-spacing: 0.7px;
+	cursor: pointer;
+	transition: var(--TransitionMain);
+}
+.btn-fill-primary:hover {
+	border-color: var(--ColorBlack-2);
+	background: transparent;
+	color: var(--ColorBlack-2);
+}
+
+/* ========= */
+/* Forms */
+/* ========= */
+.form-container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 2vh;
+}
+.form-container .main-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
 .single-input {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 1.6rem;
+	margin-bottom: 2.5rem;
 }
 .single-input label {
-	color: var(--ColorBlack);
-	font-weight: 700;
-	font-size: 0.9rem;
+	font-family: var(--FontLora);
+	color: var(--ColorBlack-2);
+	font-weight: 500;
+	font-size: 0.95rem;
 	padding-left: 0.25rem;
+	letter-spacing: 0.1rem;
+	padding-bottom: 0.25rem;
 }
 .single-input input {
-	border: 1px solid lightgray;
-	border-radius: 0.5rem;
+	border: 1px solid var(--ColorWhite-5);
+	border-radius: 0.3rem;
 	height: 2.7rem;
 	padding-left: 0.7rem;
 	font-size: 1rem;
 }
-.single-input div {
-	color: var(--ColorSemiCrimson);
-	margin-top: 0.3rem;
-}
-.single-input input:focus {
-	border: 1px solid var(--ColorBlack) !important;
-}
 .single-input input::placeholder {
 	font-weight: 400;
 	font-size: 0.9rem;
+	letter-spacing: 0.09rem;
+	opacity: 0.55;
+}
+.single-input input:focus {
+	outline-color: var(--ColorPrimary);
+}
+/* Validation Error */
+.single-input div {
+	color: crimson;
 	opacity: 0.75;
+	margin-top: 0.3rem;
 }
 
 .single-textarea {

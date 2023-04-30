@@ -50,35 +50,35 @@ const SidebarContainer = styled.div`
 		height: 6rem;
 	}
 	.close-btn {
+		margin-top: 0.2rem;
 		font-size: 1.7rem;
 		background: transparent;
 		border-color: transparent;
-		color: var(--ColorFooterDivider) !important;
+		color: var(--ColorBlack-2);
 		transition: var(--TransitionFast);
 		cursor: pointer;
-		margin-top: 0.2rem;
 	}
 	.close-btn:hover {
-		color: var(--ColorSemiCrimson) !important;
+		color: var(--ColorPrimary);
 	}
 	.links {
 		margin-bottom: 2.5rem;
 	}
 	.links a {
 		display: block;
-		text-align: left;
-		font-family: var(--FontWork);
-		font-size: 1.1rem;
-		text-transform: capitalize;
 		padding: 1rem 2.5rem;
-		color: var(--FontColorGrey);
-		transition: var(--MainTransition);
+		font-family: var(--FontWork);
+		color: var(--ColorBlack-2);
+		text-transform: capitalize;
+		font-size: 1.1rem;
+		text-align: left;
 		letter-spacing: 0.4px;
+		transition: var(--TransitionMain);
 	}
 	.links a:hover {
 		padding: 1rem 1.5rem;
 		padding-left: 3rem;
-		background: var(--ColorBlack);
+		background: var(--ColorPrimary-2);
 		color: var(--ColorWhite);
 	}
 	.sidebar {
@@ -88,7 +88,7 @@ const SidebarContainer = styled.div`
 		width: 100%;
 		height: 100%;
 		background: var(--ColorWhite);
-		transition: var(--MainTransition);
+		transition: var(--TransitionMain);
 		transform: translate(-100%);
 		z-index: -1;
 	}

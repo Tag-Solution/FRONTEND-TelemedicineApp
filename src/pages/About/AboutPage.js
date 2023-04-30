@@ -6,6 +6,7 @@ const AboutPage = () => {
 		<Wrapper className="section">
 			<div className="section-center">
 				<div className="section-title">
+					<span>Hola</span>
 					<h2>About</h2>
 				</div>
 			</div>
