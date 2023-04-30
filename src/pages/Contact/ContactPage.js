@@ -6,6 +6,7 @@ const ContactPage = () => {
 		<Wrapper className="section">
 			<div className="section-center">
 				<div className="section-title">
+					<span>Hola</span>
 					<h2>Contact</h2>
 				</div>
 			</div>

@@ -6,6 +6,7 @@ const Homepage = () => {
 		<Wrapper className="section">
 			<div className="section-center">
 				<div className="section-title">
+					<span>Hola</span>
 					<h2>Homepage</h2>
 				</div>
 			</div>
