@@ -74,7 +74,7 @@ export const landingPage = {
 
 // Services:
 export const servicesPage = {
-	title: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+	title: "Lorem ipsum dolor sit amet consectetur.",
 	text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas enim vero reiciendis dicta porro maiores modi?",
 	servicesList: services,
 };
