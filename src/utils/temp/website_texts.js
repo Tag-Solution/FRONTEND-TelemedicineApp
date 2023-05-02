@@ -31,7 +31,7 @@ export const services = [
 	},
 	{
 		id: 3,
-		title: "Personal Portal",
+		title: "User Portal",
 		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		images: [
 			{

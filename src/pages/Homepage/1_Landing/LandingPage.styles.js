@@ -31,7 +31,7 @@ export const Wrapper = styled.section`
 	.homepage-bg-back {
 		z-index: 400;
 		opacity: 0.9;
-		background-color: var(--ColorPrimary-3);
+		background-color: var(--ColorPrimary-5);
 		width: 87%;
 		height: 65%;
 		position: absolute;

@@ -4,7 +4,7 @@ import { Wrapper } from "./SingleService.styles";
 const SingleService = ({ id, title, description, images }) => {
 	return (
 		<Wrapper>
-			<h2>asd</h2>
+			<h2>{id}</h2>
 		</Wrapper>
 	);
 };

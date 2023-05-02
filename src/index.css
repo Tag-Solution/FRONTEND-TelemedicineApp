@@ -15,9 +15,11 @@
 :root {
 	/* Primary */
 	--ColorPrimary: #6496b0;
-	--ColorPrimary-2: #96c2db;
-	--ColorPrimary-3: #e5edf1;
-	--ColorPrimary-4: #eef4f3;
+	--ColorPrimary-2: #4491ba;
+	--ColorPrimary-3: #96c2db;
+	--ColorPrimary-4: #cdecfd;
+	--ColorPrimary-5: #e5edf1;
+	--ColorPrimary-6: #eef4f3;
 	/* Whites */
 	--ColorWhite: #ffffff;
 	--ColorWhite-2: #fafafa;

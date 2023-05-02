@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Wrapper } from "./ServicesPage.styles";
 
 import { servicesPage } from "../../../utils/temp/website_texts";
@@ -6,7 +6,21 @@ import { SingleService, ServicesFilter } from "../../../components";
 import { hasItems } from "../../../utils/array_utils";
 
 const ServicesPage = () => {
+	const [selectedItem, setSelectedItem] = useState(1);
+
 	let renderArray = hasItems(servicesPage.servicesList);
+
+	function handleSelection(e) {
+		setSelectedItem(e.target.id);
+	}
+
+	function renderSelectedItem(selectedItem) {
+		let myArray = servicesPage.servicesList;
+		let selection = myArray.find((item) => {
+			return item.id == selectedItem;
+		});
+		return <SingleService {...selection}></SingleService>;
+	}
 
 	return (
 		<Wrapper className="section">
@@ -17,15 +31,12 @@ const ServicesPage = () => {
 				</div>
 			</div>
 			{renderArray && (
-				<ServicesFilter services={servicesPage.servicesList}></ServicesFilter>
+				<ServicesFilter
+					handleSelection={handleSelection}
+					services={servicesPage.servicesList}
+				></ServicesFilter>
 			)}
-			{renderArray ? (
-				servicesPage.servicesList.map((serv) => {
-					return <SingleService service={serv} key={serv.id}></SingleService>;
-				})
-			) : (
-				<h3>No hay services</h3>
-			)}
+			{renderSelectedItem(selectedItem)}
 		</Wrapper>
 	);
 };
