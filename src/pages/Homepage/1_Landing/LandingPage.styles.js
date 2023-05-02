@@ -149,7 +149,7 @@ export const Wrapper = styled.section`
 	@media screen and (min-width: 1150px) {
 		.img-container {
 			.homepage-bg {
-				object-position: center center;
+				object-position: center top;
 			}
 		}
 		.text-container {
