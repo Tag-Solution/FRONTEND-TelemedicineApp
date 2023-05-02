@@ -4,7 +4,15 @@ import { Wrapper } from "./SingleService.styles";
 const SingleService = ({ id, title, description, images }) => {
 	return (
 		<Wrapper>
-			<h2>{id}</h2>
+			{/* Cuadradito de Mierda */}
+			<div className="service-desc-container">
+				<div className="title-container">
+					<span>IC</span>
+					<h2>{title}</h2>
+				</div>
+				<p>{description}</p>
+			</div>
+			{/* Imagen */}
 		</Wrapper>
 	);
 };
