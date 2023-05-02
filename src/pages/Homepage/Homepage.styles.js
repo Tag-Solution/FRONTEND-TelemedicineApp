@@ -26,13 +26,13 @@ export const Wrapper = styled.main`
 	.text-container {
 		z-index: 800;
 		position: absolute;
-		bottom: 3rem;
+		bottom: 4rem;
 		left: 1.5rem;
 		h2 {
-			width: 65%;
+			width: 70%;
 			font-family: var(--FontLora);
 			color: var(--ColorBlack);
-			font-size: 1.7rem;
+			font-size: 1.9rem;
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 2px;
@@ -41,11 +41,11 @@ export const Wrapper = styled.main`
 		p {
 			width: 85%;
 			font-family: var(--FontWork);
-			color: var(--ColorBlack-3);
+			color: var(--ColorBlack-2);
 			font-size: 1rem;
 			font-weight: 300;
 			letter-spacing: 1.2px;
-			line-height: 1.7;
+			line-height: 1.5;
 		}
 	}
 `;
