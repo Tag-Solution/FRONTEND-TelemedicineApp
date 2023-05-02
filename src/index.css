@@ -27,7 +27,8 @@
 	/* Blacks */
 	--ColorBlack: #000000;
 	--ColorBlack-2: #333333;
-	--ColorBlack-3: #454647;
+	--ColorBlack-3: #454647c8;
+	--ColorBlack-4: #5e5f60;
 
 	/* Fonts */
 	--FontLora: "Lora", Georgia, serif;

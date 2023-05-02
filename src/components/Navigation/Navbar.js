@@ -35,15 +35,17 @@ const Nav = () => {
 };
 
 const NavContainer = styled.nav`
+	position: relative;
 	z-index: 800;
 	width: 100%;
 	height: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--ColorWhite);
+	background: transparent;
+	/* background: var(--ColorWhite); */
 	color: var(--ColorBlack);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
 	.nav-center {
 		width: 90%;
 		margin: 0 auto;
