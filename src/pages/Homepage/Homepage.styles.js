@@ -20,7 +20,7 @@ export const Wrapper = styled.main`
 			width: 100%;
 			height: 100%;
 			background: rgba(95, 255, 255, 0.1);
-			opacity: 0.3;
+			opacity: 0.7;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -29,7 +29,7 @@ export const Wrapper = styled.main`
 	.homepage-bg-back {
 		z-index: 400;
 		opacity: 0.9;
-		background-color: var(--ColorPrimary-4);
+		background-color: var(--ColorPrimary-3);
 		width: 87%;
 		height: 65%;
 		position: absolute;
@@ -82,11 +82,20 @@ export const Wrapper = styled.main`
 			}
 		}
 	}
+	@media screen and (min-width: 675px) {
+		.img-container {
+			width: 80%;
+			.homepage-bg {
+				object-position: top left;
+			}
+		}
+	}
 	@media screen and (min-width: 768px) {
 		width: 100%;
 		height: 90vh;
 		display: grid;
 		place-items: center;
+		position: relative;
 		.img-container {
 			width: 60%;
 			height: 92%;
@@ -107,11 +116,16 @@ export const Wrapper = styled.main`
 				margin-bottom: 1.5rem;
 			}
 			p {
-				width: 65%;
-				font-size: 1.1rem;
-				letter-spacing: 2px;
-				line-height: 1.8;
+				width: 62%;
+				font-size: 1.3rem;
+				letter-spacing: 1.7px;
+				line-height: 1.6;
 			}
+		}
+	}
+	@media screen and (min-width: 980px) {
+		.img-container {
+			height: 100%;
 		}
 	}
 `;
