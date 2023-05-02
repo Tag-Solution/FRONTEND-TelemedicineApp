@@ -1,13 +1,16 @@
 import React from "react";
 import { Wrapper } from "./Homepage.styles";
 
-import HomepageBG from "../../assets/temp/pexels-rfstudio-3825539.jpg";
+import HomepageBG from "../../assets/temp/pexels-cedric-fauntleroy-4270088.jpg";
 
 const Homepage = () => {
 	return (
 		<Wrapper className="section">
 			{/* Image */}
-			<img className="homepage-bg" src={HomepageBG} alt="Homepage" />
+			<div className="img-container">
+				<div className="homepage-bg-overlay"></div>
+				<img className="homepage-bg" src={HomepageBG} alt="Homepage" />
+			</div>
 			<div className="homepage-bg-back"></div>
 			{/* Text */}
 			<div className="section-center">

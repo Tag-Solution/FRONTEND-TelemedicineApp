@@ -42,10 +42,8 @@ const NavContainer = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: transparent;
-	/* background: var(--ColorWhite); */
+	background: linear-gradient(to bottom, white 50%, transparent);
 	color: var(--ColorBlack);
-	/* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
 	.nav-center {
 		width: 90%;
 		margin: 0 auto;
