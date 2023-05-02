@@ -35,15 +35,15 @@ const Nav = () => {
 };
 
 const NavContainer = styled.nav`
+	position: relative;
 	z-index: 800;
 	width: 100%;
 	height: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--ColorWhite);
+	background: linear-gradient(to bottom, white 50%, transparent);
 	color: var(--ColorBlack);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 	.nav-center {
 		width: 90%;
 		margin: 0 auto;
@@ -53,6 +53,7 @@ const NavContainer = styled.nav`
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
+		max-width: var(--WidthMax);
 	}
 	.nav-toggle {
 		background: transparent;
@@ -112,15 +113,9 @@ const NavContainer = styled.nav`
 		}
 	}
 	@media (min-width: 1150px) {
-		.nav-center {
-			max-width: 1400px;
-		}
 		.nav-links {
 			li {
 				margin: 0 1.7rem;
-			}
-			a {
-				font-size: 1.15rem;
 			}
 		}
 	}

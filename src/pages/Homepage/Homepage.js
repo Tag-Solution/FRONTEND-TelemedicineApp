@@ -1,15 +1,15 @@
 import React from "react";
+
 import { Wrapper } from "./Homepage.styles";
+
+import LandingPage from "./1_Landing/LandingPage";
+import Placeholder from "./2_Placeholder/Placeholder";
 
 const Homepage = () => {
 	return (
-		<Wrapper className="section">
-			<div className="section-center">
-				<div className="section-title">
-					<span>Hola</span>
-					<h2>Homepage</h2>
-				</div>
-			</div>
+		<Wrapper>
+			<LandingPage></LandingPage>
+			<Placeholder></Placeholder>
 		</Wrapper>
 	);
 };

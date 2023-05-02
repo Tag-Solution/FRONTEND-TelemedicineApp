@@ -27,7 +27,8 @@
 	/* Blacks */
 	--ColorBlack: #000000;
 	--ColorBlack-2: #333333;
-	--ColorBlack-3: #454647;
+	--ColorBlack-3: #454647c8;
+	--ColorBlack-4: #5e5f60;
 
 	/* Fonts */
 	--FontLora: "Lora", Georgia, serif;
@@ -38,13 +39,15 @@
 	--TransitionMain: all 0.3s linear;
 	--TransitionFast: all 0.24s linear;
 	--WidthMax: 1350px;
+	--WidthMax-SectionCenter: 1500px;
 }
-*,
-::after,
-::before {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
@@ -69,11 +72,12 @@ hr {
 /* Pages */
 /* ========= */
 .section {
-	height: 100%;
+	width: 100%;
 	padding: 3rem 0rem;
 }
 .section-center {
 	width: 90%;
+	max-width: var(--WidthMax-SectionCenter);
 	margin: 0 auto;
 }
 .section .section-center .section-title {
@@ -230,14 +234,15 @@ hr {
 @media screen and (min-width: 768px) {
 	.section {
 		padding-top: 5rem;
+		overflow-x: hidden;
 	}
 	.section-center {
-		width: 88%;
+		width: 95%;
 	}
 }
 
 @media screen and (min-width: 980px) {
 	.section {
-		padding-top: 9rem;
+		padding-top: 7rem;
 	}
 }

@@ -47,7 +47,7 @@ const SidebarContainer = styled.div`
 		align-items: center;
 		width: 87%;
 		margin: 0 auto;
-		height: 6rem;
+		height: 5rem;
 	}
 	.close-btn {
 		margin-top: 0.2rem;
