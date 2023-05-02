@@ -53,6 +53,7 @@ const NavContainer = styled.nav`
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
+		max-width: var(--WidthMax);
 	}
 	.nav-toggle {
 		background: transparent;
@@ -112,15 +113,9 @@ const NavContainer = styled.nav`
 		}
 	}
 	@media (min-width: 1150px) {
-		.nav-center {
-			max-width: 1400px;
-		}
 		.nav-links {
 			li {
 				margin: 0 1.7rem;
-			}
-			a {
-				font-size: 1.15rem;
 			}
 		}
 	}
