@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
 	min-height: 90vh;
+	margin-bottom: 3rem;
 	.img-container {
 		z-index: 500;
 		position: absolute;
@@ -96,6 +97,7 @@ export const Wrapper = styled.section`
 		display: grid;
 		place-items: center;
 		position: relative;
+		margin-bottom: 6rem;
 		.img-container {
 			width: 60%;
 			height: 92%;
@@ -147,6 +149,7 @@ export const Wrapper = styled.section`
 		}
 	}
 	@media screen and (min-width: 1150px) {
+		margin-bottom: 9rem;
 		.img-container {
 			.homepage-bg {
 				object-position: center top;
