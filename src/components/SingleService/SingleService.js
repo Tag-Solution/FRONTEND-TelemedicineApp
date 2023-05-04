@@ -1,7 +1,12 @@
 import React from "react";
 import { Wrapper } from "./SingleService.styles";
 
-const SingleService = ({ id, title, description, images }) => {
+import { filterIsSelected } from "../../utils/array_utils";
+
+import { ContainerizedImage } from "../";
+
+const SingleService = ({ title, description, images }) => {
+	let image = filterIsSelected(images);
 	return (
 		<Wrapper>
 			{/* Cuadradito de Mierda */}
@@ -13,6 +18,10 @@ const SingleService = ({ id, title, description, images }) => {
 				<p>{description}</p>
 			</div>
 			{/* Imagen */}
+			<div className="separator-2rem"></div>
+			<div className="image-container">
+				<ContainerizedImage className="img" image={image}></ContainerizedImage>
+			</div>
 		</Wrapper>
 	);
 };

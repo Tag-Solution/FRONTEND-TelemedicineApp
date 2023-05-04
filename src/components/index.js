@@ -4,6 +4,8 @@ import { Sidebar, Navbar } from "./Navigation";
 
 import { FilterButton } from "./Button";
 
+import ContainerizedImage from "./Images/ContainerizedImage/ContainerizedImage";
+
 import { ServicesFilter } from "./Filters";
 
 import { RegisterForm, LoginForm } from "./Forms";
@@ -19,4 +21,5 @@ export {
 	SingleService,
 	ServicesFilter,
 	FilterButton,
+	ContainerizedImage,
 };

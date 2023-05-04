@@ -1,5 +1,9 @@
 // Images:
 import LandingBG from "../../assets/temp/pexels-cedric-fauntleroy-4270088.jpg";
+import Service1 from "../../assets/temp/pexels-ekaterina-bolovtsova-4049876.jpg";
+import Service2 from "../../assets/temp/pexels-edward-jenner-4031820.jpg";
+import Service3 from "../../assets/temp/pexels-tatiana-syrikova-3975570.jpg";
+import Service4 from "../../assets/temp/pexels-rfstudio-3825539.jpg";
 
 /***************************
  * === Services ===
@@ -12,8 +16,9 @@ export const services = [
 		images: [
 			{
 				id: 1,
-				imageUrl: null,
+				imageUrl: Service1,
 				alt: "Telehealth Service",
+				isSelected: false,
 			},
 		],
 	},
@@ -24,8 +29,9 @@ export const services = [
 		images: [
 			{
 				id: 1,
-				imageUrl: null,
+				imageUrl: Service2,
 				alt: "Mobile Service",
+				isSelected: true,
 			},
 		],
 	},
@@ -36,8 +42,9 @@ export const services = [
 		images: [
 			{
 				id: 1,
-				imageUrl: null,
+				imageUrl: Service3,
 				alt: "Portal Service",
+				isSelected: true,
 			},
 		],
 	},
@@ -48,8 +55,9 @@ export const services = [
 		images: [
 			{
 				id: 1,
-				imageUrl: null,
+				imageUrl: Service4,
 				alt: "Support Service",
+				isSelected: true,
 			},
 		],
 	},
@@ -68,6 +76,7 @@ export const landingPage = {
 			id: 1,
 			imageUrl: LandingBG,
 			alt: "Homepage",
+			isSelected: true,
 		},
 	],
 };

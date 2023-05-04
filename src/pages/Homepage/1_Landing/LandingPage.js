@@ -3,17 +3,18 @@ import { Wrapper } from "./LandingPage.styles";
 
 import { landingPage } from "../../../utils/temp/website_texts";
 
+import { filterIsSelected } from "../../../utils/array_utils";
+
+import { ContainerizedImage } from "../../../components";
+
 const LandingPage = () => {
+	let image = filterIsSelected(landingPage.images);
 	return (
 		<Wrapper className="section">
 			{/* Image */}
 			<div className="img-container">
 				<div className="homepage-bg-overlay"></div>
-				<img
-					className="homepage-bg"
-					src={landingPage.images[0].imageUrl}
-					alt={landingPage.images[0].alt}
-				/>
+				<ContainerizedImage image={image}></ContainerizedImage>
 			</div>
 			<div className="homepage-bg-back"></div>
 			{/* Text */}
