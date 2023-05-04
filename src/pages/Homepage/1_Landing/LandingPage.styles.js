@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
 		right: 0;
 		width: 75%;
 		height: 67%;
-		.homepage-bg {
+		.selected-image {
 			opacity: 0.9;
 			width: 100%;
 			height: 100%;
