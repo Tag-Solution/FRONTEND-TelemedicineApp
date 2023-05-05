@@ -78,8 +78,9 @@ const NavContainer = styled.nav`
 		}
 	}
 	@media screen and (min-width: 980px) {
-		position: fixed;
+		position: absolute;
 		top: 0;
+		transition: var(--TransitionMain);
 		.nav-toggle {
 			display: none;
 		}

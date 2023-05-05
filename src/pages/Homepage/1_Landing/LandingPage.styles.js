@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 		right: 0;
 		width: 75%;
 		height: 67%;
-		.homepage-bg {
+		.selected-image {
 			opacity: 0.9;
 			width: 100%;
 			height: 100%;
@@ -30,7 +30,7 @@ export const Wrapper = styled.section`
 	.homepage-bg-back {
 		z-index: 400;
 		opacity: 0.9;
-		background-color: var(--ColorPrimary-3);
+		background-color: var(--ColorPrimary-5);
 		width: 87%;
 		height: 65%;
 		position: absolute;
@@ -96,6 +96,7 @@ export const Wrapper = styled.section`
 		display: grid;
 		place-items: center;
 		position: relative;
+		margin-bottom: 6rem;
 		.img-container {
 			width: 60%;
 			height: 92%;
@@ -147,6 +148,7 @@ export const Wrapper = styled.section`
 		}
 	}
 	@media screen and (min-width: 1150px) {
+		margin-bottom: 9rem;
 		.img-container {
 			.homepage-bg {
 				object-position: center top;

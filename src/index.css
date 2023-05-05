@@ -15,9 +15,11 @@
 :root {
 	/* Primary */
 	--ColorPrimary: #6496b0;
-	--ColorPrimary-2: #96c2db;
-	--ColorPrimary-3: #e5edf1;
-	--ColorPrimary-4: #eef4f3;
+	--ColorPrimary-2: #4491ba;
+	--ColorPrimary-3: #96c2db;
+	--ColorPrimary-4: #cdecfd;
+	--ColorPrimary-5: #e5edf1;
+	--ColorPrimary-6: #eef4f3;
 	/* Whites */
 	--ColorWhite: #ffffff;
 	--ColorWhite-2: #fafafa;
@@ -67,13 +69,20 @@ hr {
 .margin-top-1p5rem {
 	margin-top: 2rem;
 }
+.separator-2rem {
+	height: 2rem;
+}
+.section-center-max-width-980px {
+	max-width: 980px !important;
+}
 
 /* ========= */
 /* Pages */
 /* ========= */
 .section {
 	width: 100%;
-	padding: 3rem 0rem;
+	padding-top: 3rem;
+	padding-bottom: 8rem;
 }
 .section-center {
 	width: 90%;
@@ -91,11 +100,18 @@ hr {
 	color: var(--ColorBlack-3);
 }
 .section .section-center .section-title h2 {
-	margin-top: 0.3rem;
-	font-size: 2.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
 	font-weight: 300;
 	letter-spacing: 1.2px;
 	color: var(--ColorBlack-2);
+}
+.section .section-center .section-title p {
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: var(--ColorBlack-3);
 }
 
 /* ========= */
@@ -225,10 +241,27 @@ hr {
 /* ======================================================================== */
 /* 
 ::: Device Sizes ::: 
-    768px
-    980px
-    1150px
-  +
+
+ 	@media screen and (min-width: 475px) {
+	}
+	@media screen and (min-width: 600px) {
+	}
+	@media screen and (min-width: 675px) {
+	}
+	@media screen and (min-width: 768px) {
+	}
+	@media screen and (min-width: 980px) {
+	}
+	@media screen and (min-width: 1150px) {
+	}
+
+	** 1150px + ***
+	Custom para cada Component
+
+	@media screen and (min-width: 1850px) {
+	}
+
+  
 */
 
 @media screen and (min-width: 768px) {

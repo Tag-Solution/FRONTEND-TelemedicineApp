@@ -6,7 +6,7 @@ const Placeholder = () => {
 };
 
 export const Wrapper = styled.section`
-	background: var(--ColorPrimary-3);
+	background: var(--ColorPrimary-5);
 	height: 80vh;
 	width: 100%;
 	font-size: 2rem;
