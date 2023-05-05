@@ -44,6 +44,9 @@ export const Wrapper = styled.article`
 		font-weight: 300;
 		letter-spacing: 0.7px;
 	}
+	@media screen and (min-width: 980px) {
+		width: 100%;
+	}
 `;
 
 export default SingleServiceDescription;

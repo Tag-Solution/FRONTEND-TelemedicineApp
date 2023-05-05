@@ -7,16 +7,15 @@ export const Wrapper = styled.section`
 			width: 100%;
 			height: 100%;
 			margin: 0 auto;
+			margin-top: 4rem;
 			display: grid;
 			gap: 4rem;
 			grid-template-columns: 1fr 1fr;
 			.services-container {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				row-gap: 1rem;
-				column-gap: 1rem;
-				place-items: center;
+				display: flex;
+				flex-direction: column;
 				> * {
+					margin: 1rem;
 					cursor: pointer;
 					transition: var(--TransitionMain);
 					p {
@@ -26,7 +25,7 @@ export const Wrapper = styled.section`
 			}
 			.image-container {
 				width: 100%;
-				height: 50rem;
+				height: 45rem;
 			}
 		}
 	}
