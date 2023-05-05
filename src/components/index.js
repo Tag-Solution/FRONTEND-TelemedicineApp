@@ -10,7 +10,9 @@ import { ServicesFilter } from "./Filters";
 
 import { RegisterForm, LoginForm } from "./Forms";
 
-import SingleService from "./SingleService/SingleService";
+import { SingleService, SingleServiceDescription } from "./SingleService";
+
+import useWindowDimensions from "./Other/UseWindowDimensions";
 
 export {
 	Sidebar,
@@ -19,7 +21,9 @@ export {
 	RegisterForm,
 	LoginForm,
 	SingleService,
+	SingleServiceDescription,
 	ServicesFilter,
 	FilterButton,
 	ContainerizedImage,
+	useWindowDimensions,
 };

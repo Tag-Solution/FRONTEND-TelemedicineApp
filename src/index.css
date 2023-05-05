@@ -72,13 +72,17 @@ hr {
 .separator-2rem {
 	height: 2rem;
 }
+.section-center-max-width-980px {
+	max-width: 980px !important;
+}
 
 /* ========= */
 /* Pages */
 /* ========= */
 .section {
 	width: 100%;
-	padding: 3rem 0rem;
+	padding-top: 3rem;
+	padding-bottom: 8rem;
 }
 .section-center {
 	width: 90%;
@@ -237,10 +241,27 @@ hr {
 /* ======================================================================== */
 /* 
 ::: Device Sizes ::: 
-    768px
-    980px
-    1150px
-  +
+
+ 	@media screen and (min-width: 475px) {
+	}
+	@media screen and (min-width: 600px) {
+	}
+	@media screen and (min-width: 675px) {
+	}
+	@media screen and (min-width: 768px) {
+	}
+	@media screen and (min-width: 980px) {
+	}
+	@media screen and (min-width: 1150px) {
+	}
+
+	** 1150px + ***
+	Custom para cada Component
+
+	@media screen and (min-width: 1850px) {
+	}
+
+  
 */
 
 @media screen and (min-width: 768px) {

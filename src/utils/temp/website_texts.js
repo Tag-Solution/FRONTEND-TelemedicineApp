@@ -18,7 +18,7 @@ export const services = [
 				id: 1,
 				imageUrl: Service1,
 				alt: "Telehealth Service",
-				isSelected: false,
+				isSelected: true,
 			},
 		],
 	},
@@ -50,6 +50,45 @@ export const services = [
 	},
 	{
 		id: 4,
+		title: "Support",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		images: [
+			{
+				id: 1,
+				imageUrl: Service4,
+				alt: "Support Service",
+				isSelected: true,
+			},
+		],
+	},
+	{
+		id: 5,
+		title: "Support",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		images: [
+			{
+				id: 1,
+				imageUrl: Service4,
+				alt: "Support Service",
+				isSelected: true,
+			},
+		],
+	},
+	{
+		id: 6,
+		title: "Support",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		images: [
+			{
+				id: 1,
+				imageUrl: Service4,
+				alt: "Support Service",
+				isSelected: true,
+			},
+		],
+	},
+	{
+		id: 7,
 		title: "Support",
 		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		images: [

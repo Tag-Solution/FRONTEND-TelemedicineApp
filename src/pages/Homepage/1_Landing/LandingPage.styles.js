@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
 	min-height: 90vh;
-	margin-bottom: 3rem;
 	.img-container {
 		z-index: 500;
 		position: absolute;
