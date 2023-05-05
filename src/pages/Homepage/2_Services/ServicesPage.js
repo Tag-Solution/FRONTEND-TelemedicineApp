@@ -18,13 +18,15 @@ const ServicesPage = () => {
 	const [selectedImage, setSelectedImage] = useState({});
 
 	const { width } = useWindowDimensions();
-	let renderArray = hasItems(servicesPage.servicesList);
 
 	useEffect(() => {
-		let myArray = servicesPage.servicesList;
-		setItemsArray(myArray);
-		let starterImage = filterIsSelected(myArray[0].images);
-		setSelectedImage(starterImage);
+		let renderArray = hasItems(servicesPage.servicesList);
+		if (renderArray) {
+			let myArray = servicesPage.servicesList;
+			setItemsArray(myArray);
+			let starterImage = filterIsSelected(myArray[0].images);
+			setSelectedImage(starterImage);
+		}
 	}, []);
 
 	function renderServices(selectedItem, isSingleService) {
@@ -65,7 +67,7 @@ const ServicesPage = () => {
 				</div>
 
 				{/* < 980x */}
-				{renderArray && width < 980 && (
+				{itemsArray && width < 980 && (
 					<React.Fragment>
 						<ServicesFilter
 							handleSelection={handleSelection}
@@ -76,7 +78,7 @@ const ServicesPage = () => {
 				)}
 
 				{/* > 980px */}
-				{renderArray && width >= 980 && (
+				{itemsArray && width >= 980 && (
 					<div className="main-container">
 						<div className="services-container">
 							{renderServices(selectedItem, false)}
