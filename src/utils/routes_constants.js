@@ -29,4 +29,10 @@ export const links = [
 		path: "/auth/login",
 		icon: null,
 	},
+	{
+		id: 6,
+		text: "Dashboard",
+		path: "/dashboard",
+		icon: null,
+	},
 ];

@@ -11,6 +11,7 @@ import {
 	Error,
 	LoginPage,
 	RegisterPage,
+	Dashboard,
 } from "./pages";
 import { Sidebar, Navbar } from "./components";
 
@@ -37,6 +38,10 @@ function App() {
 				<Route
 					path={links.at(4).path}
 					element={<LoginPage></LoginPage>}
+				></Route>
+				<Route
+					path={links.at(5).path}
+					element={<Dashboard></Dashboard>}
 				></Route>
 				<Route path="*" element={<Error></Error>}></Route>
 			</Routes>

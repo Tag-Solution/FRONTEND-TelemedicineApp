@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Wrapper } from "./ServicesPage.styles";
 
-import { servicesPage } from "../../../utils/temp/website_texts";
+import { servicesPage } from "../../../../utils/temp/website_texts";
 
 import {
 	ContainerizedImage,
@@ -9,8 +9,8 @@ import {
 	SingleService,
 	SingleServiceDescription,
 	useWindowDimensions,
-} from "../../../components";
-import { filterIsSelected } from "../../../utils/array_utils";
+} from "../../../../components";
+import { filterIsSelected } from "../../../../utils/array_utils";
 
 const ServicesPage = () => {
 	const [itemsArray, setItemsArray] = useState(servicesPage.servicesList);
