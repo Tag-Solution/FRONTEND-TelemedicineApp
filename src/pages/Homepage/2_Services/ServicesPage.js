@@ -10,24 +10,19 @@ import {
 	SingleServiceDescription,
 	useWindowDimensions,
 } from "../../../components";
-import { filterIsSelected, hasItems } from "../../../utils/array_utils";
+import { filterIsSelected } from "../../../utils/array_utils";
 
 const ServicesPage = () => {
-	const [itemsArray, setItemsArray] = useState([]);
+	const [itemsArray, setItemsArray] = useState(servicesPage.servicesList);
 	const [selectedItem, setSelectedItem] = useState(1);
 	const [selectedImage, setSelectedImage] = useState({});
 
 	const { width } = useWindowDimensions();
 
 	useEffect(() => {
-		let renderArray = hasItems(servicesPage.servicesList);
-		if (renderArray) {
-			let myArray = servicesPage.servicesList;
-			setItemsArray(myArray);
-			let starterImage = filterIsSelected(myArray[0].images);
-			setSelectedImage(starterImage);
-		}
-	}, []);
+		let starterImage = filterIsSelected(itemsArray[0].images);
+		setSelectedImage(starterImage);
+	}, [itemsArray]);
 
 	function renderServices(selectedItem, isSingleService) {
 		if (isSingleService) {
