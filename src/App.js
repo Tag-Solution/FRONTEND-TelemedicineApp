@@ -17,7 +17,7 @@ import { Sidebar, Navbar } from "./components";
 
 function App() {
 	return (
-		<BrowserRouter basename="/FRONTEND-TelemedicineApp">
+		<>
 			<ScrollToTop></ScrollToTop>
 			<Navbar></Navbar>
 			<Sidebar></Sidebar>
@@ -45,7 +45,7 @@ function App() {
 				></Route>
 				<Route path="*" element={<Error></Error>}></Route>
 			</Routes>
-		</BrowserRouter>
+		</>
 	);
 }
 

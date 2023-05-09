@@ -4,10 +4,16 @@ import "./index.css";
 import App from "./App";
 
 import { NavigationProvider } from "./context/NavigationContext";
+import { AuthenticationProvider } from "./context/AuthenticationContext";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	<NavigationProvider>
-		<App />
-	</NavigationProvider>
+	<BrowserRouter basename="/FRONTEND-TelemedicineApp">
+		<AuthenticationProvider>
+			<NavigationProvider>
+				<App />
+			</NavigationProvider>
+		</AuthenticationProvider>
+	</BrowserRouter>
 );

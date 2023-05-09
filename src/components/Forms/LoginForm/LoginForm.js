@@ -3,9 +3,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 import Wrapper from "./LoginForm.styles";
-import { loginUser } from "../../../services/auth_service";
+
+import { useAuthenticationContext } from "../../../context/AuthenticationContext";
 
 const LoginForm = () => {
+	const { loginUser } = useAuthenticationContext();
+
 	return (
 		<Wrapper className="form-container">
 			<Formik
@@ -19,14 +22,7 @@ const LoginForm = () => {
 						.required("Required"),
 				})}
 				onSubmit={(values) => {
-					loginUser(values)
-						.then((response) => {
-							let res = response.data;
-							alert("JWT Recibida: " + res.jwt);
-						})
-						.catch((error) => {
-							console.log(error);
-						});
+					loginUser(values);
 				}}
 			>
 				<Form className="main-form">
