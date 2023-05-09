@@ -18,7 +18,7 @@ export const AuthenticationProvider = ({ children }) => {
 		})
 			.then((response) => {
 				setCookies("token", response.data.jwt);
-				navigate("/");
+				navigate("/dashboard");
 			})
 			.catch((error) => {
 				console.log(error);

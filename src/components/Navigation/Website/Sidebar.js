@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 
-import { useNavigationContext } from "../../context/NavigationContext";
-import { links } from "../../utils/routes_constants";
+import { useNavigationContext } from "../../../context/NavigationContext";
+import { links } from "../../../utils/routes_constants";
 
-import { Logotype } from "../";
+import { Logotype } from "../..";
 
 const Sidebar = () => {
 	const { isSidebarOpen, closeSidebar } = useNavigationContext();

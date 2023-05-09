@@ -4,7 +4,7 @@ import Placeholder from "../Placeholder/Placeholder";
 const Dashboard = () => {
 	return (
 		<div>
-			<Placeholder></Placeholder>
+			<Placeholder text="Dashboard"></Placeholder>
 		</div>
 	);
 };
