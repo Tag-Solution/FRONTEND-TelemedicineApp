@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.760e5ae8.css",
-    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.db3ffdfa.js",
+    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.085a379a.css",
+    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.9a1312b7.js",
     "static/media/pexels-cedric-fauntleroy-4270088.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-cedric-fauntleroy-4270088.6dfc849ab658c0d05c04.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-ekaterina-bolovtsova-4049876.1633f0532c8f2c3b55ef.jpg",
     "static/media/pexels-edward-jenner-4031820.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-edward-jenner-4031820.190f5fd4a8f181bc2c81.jpg",
@@ -9,11 +9,11 @@
     "static/media/pexels-tatiana-syrikova-3975570.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-tatiana-syrikova-3975570.4ca4faf6118762c2d0a7.jpg",
     "static/media/No-Image-Placeholder.svg.png": "/FRONTEND-TelemedicineApp/static/media/No-Image-Placeholder.svg.d17df8873eebcb374fe4.png",
     "index.html": "/FRONTEND-TelemedicineApp/index.html",
-    "main.760e5ae8.css.map": "/FRONTEND-TelemedicineApp/static/css/main.760e5ae8.css.map",
-    "main.db3ffdfa.js.map": "/FRONTEND-TelemedicineApp/static/js/main.db3ffdfa.js.map"
+    "main.085a379a.css.map": "/FRONTEND-TelemedicineApp/static/css/main.085a379a.css.map",
+    "main.9a1312b7.js.map": "/FRONTEND-TelemedicineApp/static/js/main.9a1312b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.760e5ae8.css",
-    "static/js/main.db3ffdfa.js"
+    "static/css/main.085a379a.css",
+    "static/js/main.9a1312b7.js"
   ]
 }
