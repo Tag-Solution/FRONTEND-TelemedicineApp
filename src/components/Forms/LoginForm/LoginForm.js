@@ -6,6 +6,7 @@ import { Wrapper } from "./LoginForm.styles";
 
 import { useAuthenticationContext } from "../../../context/AuthenticationContext";
 import { ThreeDots } from "react-loader-spinner";
+import PasswordInput from "../Inputs/PasswordInput/PasswordInput";
 
 const LoginForm = () => {
 	const { loginUser, isAuthenticating } = useAuthenticationContext();
@@ -36,10 +37,7 @@ const LoginForm = () => {
 						</div>
 
 						{/* Password */}
-						<div className="single-input">
-							<label htmlFor="password">Contraseña</label>
-							<Field name="password" />
-						</div>
+						<PasswordInput></PasswordInput>
 					</div>
 					<button
 						type="submit"

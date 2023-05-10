@@ -31,6 +31,10 @@
 	--ColorBlack-2: #333333;
 	--ColorBlack-3: #454647c8;
 	--ColorBlack-4: #5e5f60;
+	/* CTA */
+	--ColorCrimson: #dc143c;
+	--ColorCrimson-1: #db294d;
+	--ColorCrimson-2: #e13c5d;
 
 	/* Fonts */
 	--FontLora: "Lora", Georgia, serif;

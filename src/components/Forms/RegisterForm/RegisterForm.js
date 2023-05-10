@@ -5,6 +5,7 @@ import * as Yup from "yup";
 
 import Wrapper from "./RegisterForm.styles";
 
+import { PasswordInput } from "../";
 import { useAuthenticationContext } from "../../../context/AuthenticationContext";
 
 const RegisterForm = () => {
@@ -53,10 +54,7 @@ const RegisterForm = () => {
 						</div>
 
 						{/* Password */}
-						<div className="single-input">
-							<label htmlFor="password">Contraseña</label>
-							<Field name="password" />
-						</div>
+						<PasswordInput></PasswordInput>
 					</div>
 
 					<div className="input-block">

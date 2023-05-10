@@ -8,7 +8,7 @@ import ContainerizedImage from "./Images/ContainerizedImage/ContainerizedImage";
 
 import { ServicesFilter } from "./Filters";
 
-import { RegisterForm, LoginForm } from "./Forms";
+import { RegisterForm, LoginForm, PasswordInput } from "./Forms";
 
 import { SingleService, SingleServiceDescription } from "./SingleService";
 
@@ -21,6 +21,7 @@ export {
 	Logotype,
 	RegisterForm,
 	LoginForm,
+	PasswordInput,
 	SingleService,
 	SingleServiceDescription,
 	ServicesFilter,
