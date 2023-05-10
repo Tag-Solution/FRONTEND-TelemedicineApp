@@ -1,3 +1,4 @@
+// Website Links:
 export const links = [
 	{
 		id: 1,
@@ -31,39 +32,35 @@ export const links = [
 	},
 ];
 
+// Dashboard Links:
 export const dashboard_links = [
 	{
 		id: 1,
-		text: "Home",
+		text: "Profile",
 		path: "/",
 		icon: null,
 	},
 	{
 		id: 2,
-		text: "About Us",
-		path: "/about",
+		text: "Contacts",
+		path: "/app/contacts",
 		icon: null,
 	},
 	{
 		id: 3,
-		text: "Contact",
-		path: "/contact",
+		text: "Calls",
+		path: "/app/calls",
 		icon: null,
 	},
 	{
 		id: 4,
-		text: "Register",
-		path: "/auth/register",
-		icon: null,
-	},
-	{
-		id: 5,
-		text: "Login",
-		path: "/auth/login",
+		text: "Settings",
+		path: "/app/settings",
 		icon: null,
 	},
 ];
 
+// All Routes:
 export const routes = [
 	{
 		id: 1,
