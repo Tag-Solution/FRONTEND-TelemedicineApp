@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/Other/ScrollToTop";
-import { links } from "./utils/routes_constants";
+import { routes } from "./utils/routes_constants";
 
 import {
 	Homepage,
@@ -23,9 +23,9 @@ function App() {
 	const { cookies } = useAuthenticationContext();
 
 	useEffect(() => {
-		let isAuth = cookies.token;
+		let isAuth = cookies.token ? true : false;
 		if (isAuth) setIsAuthenticated(true);
-	}, [cookies]);
+	}, [cookies, isAuthenticated]);
 
 	// Main:
 	return (
@@ -46,35 +46,39 @@ function App() {
 			<Routes>
 				{!isAuthenticated ? (
 					<Route
-						path={links.at(0).path}
+						path={routes.at(0).path}
 						exact
 						element={<Homepage></Homepage>}
 					></Route>
 				) : (
 					<React.Fragment>
 						<Route
-							path={links.at(5).path}
+							path={routes.at(5).path}
 							element={<Dashboard></Dashboard>}
 						></Route>
 					</React.Fragment>
 				)}
 				<Route
-					path={links.at(1).path}
+					path={routes.at(1).path}
 					element={<AboutPage></AboutPage>}
 				></Route>
 				<Route
-					path={links.at(2).path}
+					path={routes.at(2).path}
 					element={<ContactPage></ContactPage>}
 				></Route>
 				<Route
-					path={links.at(3).path}
+					path={routes.at(3).path}
 					element={<RegisterPage></RegisterPage>}
 				></Route>
 				<Route
-					path={links.at(4).path}
+					path={routes.at(4).path}
 					element={<LoginPage></LoginPage>}
 				></Route>
-				<Route path="*" element={<Error></Error>}></Route>
+				{!isAuthenticated ? (
+					<Route path="*" element={<Error></Error>}></Route>
+				) : (
+					<Route path="*" element={<Dashboard></Dashboard>}></Route>
+				)}
 			</Routes>
 		</>
 	);

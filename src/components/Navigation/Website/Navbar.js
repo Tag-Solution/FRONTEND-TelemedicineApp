@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -10,6 +10,7 @@ import { Logotype } from "../..";
 
 const Nav = () => {
 	const { openSidebar } = useNavigationContext();
+
 	return (
 		<NavContainer>
 			<div className="nav-center">
