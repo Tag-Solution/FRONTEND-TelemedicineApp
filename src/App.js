@@ -53,7 +53,8 @@ function App() {
 				) : (
 					<React.Fragment>
 						<Route
-							path={routes.at(5).path}
+							path={routes.at(0).path}
+							exact
 							element={<Dashboard></Dashboard>}
 						></Route>
 					</React.Fragment>

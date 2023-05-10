@@ -2,12 +2,13 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-import Wrapper from "./LoginForm.styles";
+import { Wrapper } from "./LoginForm.styles";
 
 import { useAuthenticationContext } from "../../../context/AuthenticationContext";
+import { ThreeDots } from "react-loader-spinner";
 
 const LoginForm = () => {
-	const { loginUser } = useAuthenticationContext();
+	const { loginUser, isAuthenticating } = useAuthenticationContext();
 
 	return (
 		<Wrapper className="form-container">
@@ -40,8 +41,28 @@ const LoginForm = () => {
 							<Field name="password" />
 						</div>
 					</div>
-					<button type="submit" className="btn-fill-primary margin-top-1p5rem">
-						Submit
+					<button
+						type="submit"
+						className={
+							!isAuthenticating
+								? "btn-fill-primary margin-top-1p5rem"
+								: "btn-fill-primary-no-hover margin-top-1p5rem"
+						}
+					>
+						{!isAuthenticating ? (
+							"Submit"
+						) : (
+							<ThreeDots
+								height="1rem"
+								width="100%"
+								radius="9"
+								color="#ffffff"
+								ariaLabel="three-dots-loading"
+								wrapperStyle={{ padding: "0.2817rem 0rem" }}
+								wrapperClassName=""
+								visible={true}
+							></ThreeDots>
+						)}
 					</button>
 				</Form>
 			</Formik>

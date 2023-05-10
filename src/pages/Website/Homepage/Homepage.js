@@ -11,7 +11,7 @@ const Homepage = () => {
 		<Wrapper>
 			<LandingPage></LandingPage>
 			<ServicesPage></ServicesPage>
-			<Placeholder></Placeholder>
+			<Placeholder text="Placeholder"></Placeholder>
 		</Wrapper>
 	);
 };
