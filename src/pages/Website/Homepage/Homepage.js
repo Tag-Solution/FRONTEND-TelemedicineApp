@@ -3,7 +3,7 @@ import React from "react";
 import { Wrapper } from "./Homepage.styles";
 
 import LandingPage from "./1_Landing/LandingPage";
-import Placeholder from "./Placeholder/Placeholder";
+import Placeholder from "../../Placeholder/Placeholder";
 import ServicesPage from "./2_Services/ServicesPage";
 
 const Homepage = () => {
@@ -11,7 +11,7 @@ const Homepage = () => {
 		<Wrapper>
 			<LandingPage></LandingPage>
 			<ServicesPage></ServicesPage>
-			<Placeholder></Placeholder>
+			<Placeholder text="Placeholder"></Placeholder>
 		</Wrapper>
 	);
 };

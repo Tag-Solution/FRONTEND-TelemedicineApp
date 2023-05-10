@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.article`
-	width: 90%;
+	width: 97%;
 	margin: 0 auto;
 	padding-bottom: 2rem;
 	.btn-container {

@@ -1,4 +1,6 @@
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
+import Sidebar from "./Website/Sidebar";
+import Navbar from "./Website/Navbar";
 
-export { Sidebar, Navbar };
+import DashboardNavigation from "./Dashboard/DashboardNavigation";
+
+export { Sidebar, Navbar, DashboardNavigation };

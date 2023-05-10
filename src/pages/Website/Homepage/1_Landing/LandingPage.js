@@ -1,11 +1,11 @@
 import React from "react";
 import { Wrapper } from "./LandingPage.styles";
 
-import { landingPage } from "../../../utils/temp/website_texts";
+import { landingPage } from "../../../../utils/temp/website_texts";
 
-import { filterIsSelected } from "../../../utils/array_utils";
+import { filterIsSelected } from "../../../../utils/array_utils";
 
-import { ContainerizedImage } from "../../../components";
+import { ContainerizedImage } from "../../../../components";
 
 const LandingPage = () => {
 	let image = filterIsSelected(landingPage.images);

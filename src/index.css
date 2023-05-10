@@ -159,6 +159,22 @@ hr {
 	color: var(--ColorBlack-2);
 }
 
+.btn-fill-primary-no-hover {
+	outline: none;
+	border: 1px solid var(--ColorPrimary);
+	border-radius: 0.2rem;
+	padding: 0.375rem 0.75rem;
+	background: var(--ColorPrimary);
+	font-family: var(--FontLora);
+	color: var(--ColorWhite);
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 1.2rem;
+	letter-spacing: 0.7px;
+	cursor: pointer;
+	transition: var(--TransitionMain);
+}
+
 /* ========= */
 /* Forms */
 /* ========= */

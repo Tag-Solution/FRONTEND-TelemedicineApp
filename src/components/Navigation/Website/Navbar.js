@@ -3,13 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 
-import { links } from "../../utils/routes_constants";
-import { useNavigationContext } from "../../context/NavigationContext";
+import { links } from "../../../utils/routes_constants";
+import { useNavigationContext } from "../../../context/NavigationContext";
 
-import { Logotype } from "../";
+import { Logotype } from "../..";
 
 const Nav = () => {
 	const { openSidebar } = useNavigationContext();
+
 	return (
 		<NavContainer>
 			<div className="nav-center">
