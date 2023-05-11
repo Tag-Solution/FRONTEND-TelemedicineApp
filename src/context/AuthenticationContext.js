@@ -54,8 +54,6 @@ export const AuthenticationProvider = ({ children }) => {
 		setIsLoading(true);
 		["token"].forEach((obj) => removeCookie(obj));
 		setIsLoading(false);
-		navigate(0);
-		navigate("/");
 	};
 
 	const value = useMemo(

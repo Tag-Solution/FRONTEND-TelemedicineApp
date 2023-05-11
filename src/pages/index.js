@@ -5,7 +5,14 @@ import ContactPage from "./Website/Contact/ContactPage";
 import { RegisterPage, LoginPage } from "./_auth/";
 
 // Dashboard
-import Dashboard from "./Dashboard/Dashboard";
+import {
+	SharedLayout,
+	Profile,
+	Contacts,
+	SingleContact,
+	Calls,
+	Settings,
+} from "./Dashboard";
 
 // Utils
 import Error from "./Error/Error";
@@ -18,7 +25,12 @@ export {
 	RegisterPage,
 	LoginPage,
 	// Dashboard
-	Dashboard,
+	SharedLayout,
+	Profile,
+	Contacts,
+	SingleContact,
+	Calls,
+	Settings,
 	// Utils
 	Error,
 };

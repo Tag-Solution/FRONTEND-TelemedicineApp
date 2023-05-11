@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/Other/ScrollToTop";
-import { routes } from "./utils/routes_constants";
+import { dashboard_links, routes } from "./utils/routes_constants";
 
 import {
 	Homepage,
@@ -11,9 +11,14 @@ import {
 	Error,
 	LoginPage,
 	RegisterPage,
-	Dashboard,
+	SharedLayout,
+	Profile,
+	Contacts,
+	SingleContact,
+	Calls,
+	Settings,
 } from "./pages";
-import { Sidebar, Navbar, DashboardNavigation } from "./components";
+import { Sidebar, Navbar } from "./components";
 
 import { useAuthenticationContext } from "./context/AuthenticationContext";
 
@@ -33,52 +38,66 @@ function App() {
 			<ScrollToTop></ScrollToTop>
 
 			{/* Navigation */}
-			{!isAuthenticated ? (
+			{!isAuthenticated && (
 				<React.Fragment>
 					<Navbar></Navbar>
 					<Sidebar></Sidebar>
 				</React.Fragment>
-			) : (
-				<DashboardNavigation></DashboardNavigation>
 			)}
 
 			{/* Routes */}
 			<Routes>
 				{!isAuthenticated ? (
-					<Route
-						path={routes.at(0).path}
-						exact
-						element={<Homepage></Homepage>}
-					></Route>
-				) : (
 					<React.Fragment>
 						<Route
 							path={routes.at(0).path}
 							exact
-							element={<Dashboard></Dashboard>}
+							element={<Homepage></Homepage>}
+						></Route>
+						<Route
+							path={routes.at(1).path}
+							element={<AboutPage></AboutPage>}
+						></Route>
+						<Route
+							path={routes.at(2).path}
+							element={<ContactPage></ContactPage>}
+						></Route>
+						<Route
+							path={routes.at(3).path}
+							element={<RegisterPage></RegisterPage>}
+						></Route>
+						<Route
+							path={routes.at(4).path}
+							element={<LoginPage></LoginPage>}
 						></Route>
 					</React.Fragment>
+				) : (
+					<React.Fragment>
+						<Route
+							path={routes.at(0).path}
+							element={<SharedLayout></SharedLayout>}
+						>
+							<Route index element={<Profile></Profile>}></Route>
+							<Route
+								path={dashboard_links.at(1).path}
+								element={<Contacts></Contacts>}
+							></Route>
+							<Route
+								path={dashboard_links.at(2).path}
+								element={<Calls></Calls>}
+							></Route>
+							<Route
+								path={dashboard_links.at(3).path}
+								element={<Settings></Settings>}
+							></Route>
+						</Route>
+					</React.Fragment>
 				)}
-				<Route
-					path={routes.at(1).path}
-					element={<AboutPage></AboutPage>}
-				></Route>
-				<Route
-					path={routes.at(2).path}
-					element={<ContactPage></ContactPage>}
-				></Route>
-				<Route
-					path={routes.at(3).path}
-					element={<RegisterPage></RegisterPage>}
-				></Route>
-				<Route
-					path={routes.at(4).path}
-					element={<LoginPage></LoginPage>}
-				></Route>
+
 				{!isAuthenticated ? (
 					<Route path="*" element={<Error></Error>}></Route>
 				) : (
-					<Route path="*" element={<Dashboard></Dashboard>}></Route>
+					<Route path="*" element={<SharedLayout></SharedLayout>}></Route>
 				)}
 			</Routes>
 		</>
