@@ -28,4 +28,30 @@ export const Wrapper = styled.aside`
 			cursor: pointer;
 		}
 	}
+
+	@media screen and (min-width: 980px) {
+		width: 12rem;
+		height: 100%;
+		top: 0;
+		right: 0;
+		.nav-links {
+			width: 70%;
+			padding-top: 3rem;
+			flex-direction: column;
+			justify-content: unset;
+			align-items: start;
+
+			a {
+				margin-top: 2rem;
+				font-family: var(--FontLora);
+				font-weight: 300;
+				font-size: 1.1rem;
+				letter-spacing: 0.17rem;
+				color: var(--ColorBlack-3);
+			}
+			* {
+				margin-top: 2rem;
+			}
+		}
+	}
 `;
