@@ -6,9 +6,6 @@ import { DashboardNavigation, useWindowDimensions } from "../../components";
 
 const SharedLayout = () => {
 	const { height } = useWindowDimensions();
-	console.log("====================================");
-	console.log(height);
-	console.log("====================================");
 	return (
 		<Wrapper>
 			<DashboardNavigation></DashboardNavigation>
