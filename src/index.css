@@ -83,6 +83,11 @@ hr {
 /* ========= */
 /* Pages */
 /* ========= */
+
+.outlet-section {
+	height: calc(100vh - 4rem);
+}
+
 .section {
 	width: 100%;
 	padding-top: 3rem;
