@@ -6,13 +6,14 @@ import { DashboardNavigation, useWindowDimensions } from "../../components";
 
 const SharedLayout = () => {
 	const { height } = useWindowDimensions();
+
 	return (
-		<Wrapper>
+		<Wrapper style={{ height: `${height}px` }}>
 			<DashboardNavigation></DashboardNavigation>
 			<div
 				className="outlet-container"
 				style={{
-					height: `calc(${height} - 4rem)`,
+					height: `calc(${height}px - 4rem)`,
 				}}
 			>
 				<Outlet></Outlet>
