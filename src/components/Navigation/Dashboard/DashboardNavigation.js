@@ -20,6 +20,7 @@ const DashboardNavigation = () => {
 				<span
 					onClick={() => {
 						logoutUser();
+						navigate("/");
 						navigate(0);
 					}}
 				>

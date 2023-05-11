@@ -1,3 +1,7 @@
+import { BiUserCircle, BiPhoneCall } from "react-icons/bi";
+import { IoMdContacts } from "react-icons/io";
+import { AiOutlineSetting } from "react-icons/ai";
+
 // Website Links:
 export const links = [
 	{
@@ -33,30 +37,31 @@ export const links = [
 ];
 
 // Dashboard Links:
+
 export const dashboard_links = [
 	{
 		id: 1,
 		text: "Profile",
 		path: "/",
-		icon: null,
+		icon: <BiUserCircle></BiUserCircle>,
 	},
 	{
 		id: 2,
 		text: "Contacts",
 		path: "/app/contacts",
-		icon: null,
+		icon: <IoMdContacts></IoMdContacts>,
 	},
 	{
 		id: 3,
 		text: "Calls",
 		path: "/app/calls",
-		icon: null,
+		icon: <BiPhoneCall></BiPhoneCall>,
 	},
 	{
 		id: 4,
 		text: "Settings",
 		path: "/app/settings",
-		icon: null,
+		icon: <AiOutlineSetting></AiOutlineSetting>,
 	},
 ];
 

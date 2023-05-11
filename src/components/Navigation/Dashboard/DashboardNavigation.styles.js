@@ -15,7 +15,17 @@ export const Wrapper = styled.aside`
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		cursor: pointer;
 		transition: var(--TransitionMain);
+		a {
+			margin-top: 0.45rem;
+			font-size: 1.6rem;
+			color: var(--ColorPrimary);
+			cursor: pointer;
+		}
+		span {
+			font-size: 1.3rem !important;
+			color: var(--ColorCrimson);
+			cursor: pointer;
+		}
 	}
 `;

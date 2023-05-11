@@ -1,7 +1,18 @@
 import React from "react";
+import { Wrapper } from "./Profile.styles";
 
 const Profile = () => {
-	return <div>Profile</div>;
+	return (
+		<Wrapper>
+			<div className="section">
+				<div className="section-center">
+					<div className="section-title">
+						<h2>Profile</h2>
+					</div>
+				</div>
+			</div>
+		</Wrapper>
+	);
 };
 
 export default Profile;
