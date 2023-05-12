@@ -21,6 +21,7 @@ const SharedLayout = () => {
 					paddingLeft: `${isMobile ? "0" : "12rem"}`,
 				}}
 			>
+				{/* TODO: If LOADING, show LOADING_PAGE, then OUTLET (Having user DATA) */}
 				<Outlet></Outlet>
 			</div>
 		</Wrapper>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.article`
-	padding-bottom: 2rem;
+	padding-bottom: 1.5rem;
 	.cover-image {
 		width: 100%;
 		height: 25vh;

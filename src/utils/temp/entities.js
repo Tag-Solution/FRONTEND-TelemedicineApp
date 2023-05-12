@@ -14,6 +14,7 @@ const userProfile = {
 	location: "California, USA",
 	address: "288 Chemin de la Ramasse",
 	cap: "74160",
+	mobile: "+4179000000",
 	job: "Front-End Developer",
 };
 

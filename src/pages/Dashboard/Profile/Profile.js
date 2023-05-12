@@ -10,6 +10,7 @@ const Profile = () => {
 		<Wrapper>
 			<div className="outlet-section">
 				<ProfileHeader data={userEntity}></ProfileHeader>
+				<hr />
 				<ProfileBio data={userEntity}></ProfileBio>
 			</div>
 		</Wrapper>

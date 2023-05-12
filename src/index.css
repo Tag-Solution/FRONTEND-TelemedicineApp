@@ -35,6 +35,9 @@
 	--ColorCrimson: #dc143c;
 	--ColorCrimson-1: #db294d;
 	--ColorCrimson-2: #e13c5d;
+	/* Dashboard */
+	--ColorDashboard-Black: #2e2e2e;
+	--ColorDashboard-Grey: #b5b7bc;
 
 	/* Fonts */
 	--FontLora: "Lora", Georgia, serif;
