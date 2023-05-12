@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrapper } from "./SingleService.styles";
 
-import { filterIsSelected } from "../../utils/array_utils";
+import { filterIsSelected } from "../../../utils/array_utils";
 
-import { ContainerizedImage } from "../";
+import { ContainerizedImage } from "../../";
 import SingleServiceDescription from "./SingleServiceDescription/SingleServiceDescription";
 
 const SingleService = ({ title, description, images }) => {

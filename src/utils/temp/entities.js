@@ -6,9 +6,15 @@ import NoCover from "../../assets/static/Cover-Image-Placeholder.jpg";
 /* 1. User Entity */
 /* ======================================================================== */
 
-export const userProfile = {
-	avatar: NoAvatar,
-	coverImage: NoCover,
+const userProfile = {
+	avatar: "NoAvatar",
+	coverImage: "NoCover",
+	description:
+		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, modi? adipisicing elit. Beatae, modi?",
+	location: "California, USA",
+	address: "288 Chemin de la Ramasse",
+	cap: "74160",
+	job: "Front-End Developer",
 };
 
 export const userEntity = {
