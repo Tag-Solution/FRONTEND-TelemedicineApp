@@ -12,6 +12,7 @@ const Profile = () => {
 				<ProfileHeader data={userEntity}></ProfileHeader>
 				<hr />
 				<ProfileBio data={userEntity}></ProfileBio>
+				<hr style={{ width: "85%", margin: "0 auto" }} />
 			</div>
 		</Wrapper>
 	);
