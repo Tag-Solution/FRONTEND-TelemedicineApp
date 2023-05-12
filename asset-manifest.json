@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.085a379a.css",
-    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.4d45084e.js",
+    "main.css": "/FRONTEND-TelemedicineApp/static/css/main.ab7a92ff.css",
+    "main.js": "/FRONTEND-TelemedicineApp/static/js/main.4e7cb81b.js",
     "static/media/pexels-cedric-fauntleroy-4270088.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-cedric-fauntleroy-4270088.6dfc849ab658c0d05c04.jpg",
     "static/media/pexels-ekaterina-bolovtsova-4049876.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-ekaterina-bolovtsova-4049876.1633f0532c8f2c3b55ef.jpg",
     "static/media/pexels-edward-jenner-4031820.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-edward-jenner-4031820.190f5fd4a8f181bc2c81.jpg",
     "static/media/pexels-rfstudio-3825539.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-rfstudio-3825539.6d35d969c82fb944bed2.jpg",
     "static/media/pexels-tatiana-syrikova-3975570.jpg": "/FRONTEND-TelemedicineApp/static/media/pexels-tatiana-syrikova-3975570.4ca4faf6118762c2d0a7.jpg",
+    "static/media/Cover-Image-Placeholder.jpg": "/FRONTEND-TelemedicineApp/static/media/Cover-Image-Placeholder.c82aeaac193a71643227.jpg",
+    "static/media/Profile-Image-Placeholder.jpg": "/FRONTEND-TelemedicineApp/static/media/Profile-Image-Placeholder.0e4d1c8a669908316fea.jpg",
     "static/media/No-Image-Placeholder.svg.png": "/FRONTEND-TelemedicineApp/static/media/No-Image-Placeholder.svg.d17df8873eebcb374fe4.png",
     "index.html": "/FRONTEND-TelemedicineApp/index.html",
-    "main.085a379a.css.map": "/FRONTEND-TelemedicineApp/static/css/main.085a379a.css.map",
-    "main.4d45084e.js.map": "/FRONTEND-TelemedicineApp/static/js/main.4d45084e.js.map"
+    "main.ab7a92ff.css.map": "/FRONTEND-TelemedicineApp/static/css/main.ab7a92ff.css.map",
+    "main.4e7cb81b.js.map": "/FRONTEND-TelemedicineApp/static/js/main.4e7cb81b.js.map"
   },
   "entrypoints": [
-    "static/css/main.085a379a.css",
-    "static/js/main.4d45084e.js"
+    "static/css/main.ab7a92ff.css",
+    "static/js/main.4e7cb81b.js"
   ]
 }
