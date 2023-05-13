@@ -1,22 +1,25 @@
-import { createContext, useContext, useReducer } from "react";
-import { useCookies } from "react-cookie";
-
-const initialState = {
-	isLoading: false,
-	user: null,
-};
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { useAuthenticationContext } from "./AuthenticationContext";
 
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-	const [cookies] = useCookies();
+	const [isAuthenticated, setIsAuthenticated] = useState(false);
+	const { cookies } = useAuthenticationContext();
 
-	// Me Data:
-	const fetchUserData = () => {};
+	// Current User:
+	useEffect(() => {
+		let isAuth = cookies.token ? true : false;
+		if (isAuth) setIsAuthenticated(true);
+	}, [cookies, isAuthenticated]);
 
-	return <UserContext.Provider value={{}}>{children}</UserContext.Provider>;
+	const value = {
+		isAuthenticated,
+	};
+
+	return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
 
 export const useUserContext = () => {
-	return useContext(UserProvider);
+	return useContext(UserContext);
 };

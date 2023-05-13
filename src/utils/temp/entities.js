@@ -1,14 +1,13 @@
 // Imports:
-import NoAvatar from "../../assets/static/Profile-Image-Placeholder.jpg";
-import NoCover from "../../assets/static/Cover-Image-Placeholder.jpg";
 
 /* ======================================================================== */
 /* 1. User Entity */
 /* ======================================================================== */
 
 const userProfile = {
-	avatar: "NoAvatar",
-	coverImage: "NoCover",
+	id: 1,
+	avatar: "https://aws.imagenes.com/imagen.jpg",
+	coverImage: "https://aws.imagenes.com/imagen.jpg",
 	description:
 		"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, modi? adipisicing elit. Beatae, modi?",
 	location: "California, USA",

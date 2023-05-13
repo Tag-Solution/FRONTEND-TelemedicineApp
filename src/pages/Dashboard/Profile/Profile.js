@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import { Wrapper } from "./Profile.styles";
 
 import { ProfileHeader, ProfileBio } from "../../../components/";
 
 import { userEntity } from "../../../utils/temp/entities";
+import { API_TEST_GET } from "../../../utils/api_constants";
 
 const Profile = () => {
+	useEffect(() => {
+		axios
+			.get(API_TEST_GET)
+			.then((res) => console.log(res.data))
+			.catch((e) => console.log(e));
+	}, []);
 	return (
 		<Wrapper>
 			<div className="outlet-section">

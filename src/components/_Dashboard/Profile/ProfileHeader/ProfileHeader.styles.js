@@ -4,14 +4,14 @@ export const Wrapper = styled.article`
 	padding-bottom: 1.5rem;
 	.cover-image {
 		width: 100%;
-		height: 22vh;
+		height: 10rem;
 		object-fit: cover;
 	}
 	.info {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: -7vh;
+		margin-top: -2.5rem;
 		img {
 			width: 5rem;
 			border-radius: 50%;
