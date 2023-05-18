@@ -20,7 +20,6 @@ import {
 } from "./pages";
 import { Sidebar, Navbar } from "./components";
 
-import { useAuthenticationContext } from "./context/AuthenticationContext";
 import { useUserContext } from "./context/UserContext";
 
 function App() {

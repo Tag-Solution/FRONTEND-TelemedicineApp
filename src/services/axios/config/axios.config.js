@@ -6,6 +6,6 @@ import { BASE_URL } from "../../../utils/api_constants";
 export default axios.create({
 	base_url: BASE_URL,
 	headers: {
-		Authorization: AuthHeader(),
+		Authorization: "Bearer " + AuthHeader(),
 	},
 });

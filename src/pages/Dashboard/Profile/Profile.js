@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import { Wrapper } from "./Profile.styles";
 
 import { ProfileHeader, ProfileBio } from "../../../components/";
 
 import { userEntity } from "../../../utils/temp/entities";
 import { API_TEST_GET } from "../../../utils/api_constants";
+import axiosConfig from "../../../services/axios/config/axios.config";
 
 const Profile = () => {
 	useEffect(() => {
-		axios
+		axiosConfig
 			.get(API_TEST_GET)
 			.then((res) => console.log(res.data))
 			.catch((e) => console.log(e));
