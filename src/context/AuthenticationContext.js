@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 import { API_REGISTER, API_LOGIN } from "../utils/api_constants";
+import setAuthHeader from "../services/axios/config/auth-header";
 
 const AuthenticationContext = createContext();
 
@@ -22,6 +23,7 @@ export const AuthenticationProvider = ({ children }) => {
 			})
 			.then((response) => {
 				setCookies("token", response.data.jwt);
+				setAuthHeader();
 				setIsLoading(false);
 				navigate("/");
 			})
@@ -42,6 +44,7 @@ export const AuthenticationProvider = ({ children }) => {
 			})
 			.then((response) => {
 				setCookies("token", response.data.jwt);
+				setAuthHeader();
 				setIsLoading(false);
 				navigate("/");
 			})

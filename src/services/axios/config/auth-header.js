@@ -1,9 +1,11 @@
-export default function AuthHeader() {
+import axios from "axios";
+
+export default function setAuthHeader() {
 	let cookieValue = document.cookie?.split("=")[1];
 
-	if (cookieValue != undefined) {
-		return cookieValue;
+	if (cookieValue !== undefined) {
+		axios.defaults.headers.common["Authorization"] = "Bearer " + cookieValue;
 	} else {
-		return null;
+		delete axios.defaults.headers.common["Authorization"];
 	}
 }
