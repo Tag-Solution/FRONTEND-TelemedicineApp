@@ -35,4 +35,24 @@ export const Wrapper = styled.article`
 			}
 		}
 	}
+	@media screen and (min-width: 980px) {
+		.cover-image {
+			height: 15rem;
+		}
+		.info {
+			margin-top: -3rem;
+			img {
+				width: 6rem;
+			}
+			.text {
+				margin-top: 0.5rem;
+				h2 {
+					font-size: 1.2rem;
+				}
+				p {
+					font-size: 0.95rem;
+				}
+			}
+		}
+	}
 `;

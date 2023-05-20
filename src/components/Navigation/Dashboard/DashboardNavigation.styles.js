@@ -15,18 +15,19 @@ export const Wrapper = styled.aside`
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		transition: var(--TransitionMain);
 		a {
 			margin-top: 0.45rem;
 			font-size: 1.8rem;
 			color: var(--ColorDashboard-Grey);
 			cursor: pointer;
+			transition: var(--TransitionMain);
 		}
 		span {
-			font-size: 1.2rem !important;
+			font-size: 1.2rem;
 			letter-spacing: 1.3px;
 			color: var(--ColorDashboard-Grey);
 			cursor: pointer;
+			transition: var(--TransitionMain);
 		}
 	}
 
@@ -41,17 +42,26 @@ export const Wrapper = styled.aside`
 			flex-direction: column;
 			justify-content: unset;
 			align-items: start;
-
 			a {
-				margin-top: 2rem;
-				font-family: var(--FontLora);
-				font-weight: 300;
+				margin-top: 3rem;
+				font-family: var(--FontWork);
+				font-weight: 200;
 				font-size: 1.1rem;
-				letter-spacing: 0.17rem;
-				color: var(--ColorBlack-3);
+				letter-spacing: 0.2rem;
+				color: var(--ColorWhite-5);
+				&:hover {
+					color: var(--ColorPrimary);
+				}
 			}
-			* {
-				margin-top: 2rem;
+			span {
+				margin-top: 3rem;
+				font-family: var(--FontWork);
+				font-weight: 300;
+				letter-spacing: 0.15rem;
+				color: var(--ColorWhite-2);
+				&:hover {
+					color: var(--ColorPrimary);
+				}
 			}
 		}
 	}

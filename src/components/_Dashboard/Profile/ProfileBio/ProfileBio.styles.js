@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.article`
-	padding: 1.3rem;
+	padding: 1.3rem 0rem;
+	width: 85%;
+	max-width: var(--WidthMax-SectionCenter);
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -27,6 +30,12 @@ export const Wrapper = styled.article`
 				font-size: 0.9rem;
 				letter-spacing: 2px;
 			}
+		}
+	}
+	@media screen and (min-width: 980px) {
+		padding: 2rem 0rem;
+		h3 {
+			font-size: 0.9rem;
 		}
 	}
 `;
