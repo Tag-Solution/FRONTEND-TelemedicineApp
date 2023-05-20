@@ -103,6 +103,8 @@ hr {
 .section .section-center .section-title {
 	text-align: center;
 	padding-bottom: 3rem;
+	width: 85%;
+	margin: 0 auto;
 }
 .section .section-center .section-title span {
 	font-weight: 400;
@@ -112,7 +114,7 @@ hr {
 }
 .section .section-center .section-title h2 {
 	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 300;
 	letter-spacing: 1.2px;
@@ -123,6 +125,8 @@ hr {
 	font-size: 1rem;
 	letter-spacing: 2px;
 	color: var(--ColorBlack-3);
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 /* ========= */
