@@ -1,8 +1,9 @@
 import { createContext, useContext, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import AxiosConfig from "../services/axios/config/axios.config";
+import axios from "axios";
 import { API_REGISTER, API_LOGIN } from "../utils/api_constants";
+import setAuthHeader from "../services/axios/config/auth-header";
 
 const AuthenticationContext = createContext();
 
@@ -14,13 +15,15 @@ export const AuthenticationProvider = ({ children }) => {
 	// Register:
 	const registerUser = (body) => {
 		setIsLoading(true);
-		AxiosConfig.post(API_REGISTER, body, {
-			validateStatus: function (status) {
-				return status < 500;
-			},
-		})
+		axios
+			.post(API_REGISTER, body, {
+				validateStatus: function (status) {
+					return status < 500;
+				},
+			})
 			.then((response) => {
 				setCookies("token", response.data.jwt);
+				setAuthHeader();
 				setIsLoading(false);
 				navigate("/");
 			})
@@ -33,13 +36,15 @@ export const AuthenticationProvider = ({ children }) => {
 	// Login:
 	const loginUser = (body) => {
 		setIsLoading(true);
-		AxiosConfig.post(API_LOGIN, body, {
-			validateStatus: function (status) {
-				return status < 500;
-			},
-		})
+		axios
+			.post(API_LOGIN, body, {
+				validateStatus: function (status) {
+					return status < 500;
+				},
+			})
 			.then((response) => {
 				setCookies("token", response.data.jwt);
+				setAuthHeader();
 				setIsLoading(false);
 				navigate("/");
 			})

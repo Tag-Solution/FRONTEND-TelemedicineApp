@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/Other/ScrollToTop";
@@ -14,23 +14,16 @@ import {
 	SharedLayout,
 	Profile,
 	Contacts,
-	SingleContact,
 	Calls,
 	Settings,
 } from "./pages";
 import { Sidebar, Navbar } from "./components";
 
-import { useAuthenticationContext } from "./context/AuthenticationContext";
+import { useUserContext } from "./context/UserContext";
 
 function App() {
 	// Authentication:
-	const [isAuthenticated, setIsAuthenticated] = useState(false);
-	const { cookies } = useAuthenticationContext();
-
-	useEffect(() => {
-		let isAuth = cookies.token ? true : false;
-		if (isAuth) setIsAuthenticated(true);
-	}, [cookies, isAuthenticated]);
+	const { isAuthenticated } = useUserContext();
 
 	// Main:
 	return (

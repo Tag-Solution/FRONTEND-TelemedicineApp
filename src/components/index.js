@@ -4,28 +4,34 @@ import { Sidebar, Navbar, DashboardNavigation } from "./Navigation";
 
 import { FilterButton } from "./Button";
 
-import ContainerizedImage from "./Images/ContainerizedImage/ContainerizedImage";
-
 import { ServicesFilter } from "./Filters";
 
 import { RegisterForm, LoginForm, PasswordInput } from "./Forms";
 
-import { SingleService, SingleServiceDescription } from "./SingleService";
-
 import useWindowDimensions from "./Other/UseWindowDimensions";
 
+import ContainerizedImage from "./Images/ContainerizedImage/ContainerizedImage";
+
+import { SingleService, SingleServiceDescription } from "./_Website/";
+
+import { ProfileHeader, ProfileBio } from "./_Dashboard";
+
 export {
+	Logotype,
 	Sidebar,
 	Navbar,
 	DashboardNavigation,
-	Logotype,
+	FilterButton,
+	ServicesFilter,
 	RegisterForm,
 	LoginForm,
 	PasswordInput,
+	useWindowDimensions,
+	ContainerizedImage,
+	// Website:
 	SingleService,
 	SingleServiceDescription,
-	ServicesFilter,
-	FilterButton,
-	ContainerizedImage,
-	useWindowDimensions,
+	// Dashboard:
+	ProfileHeader,
+	ProfileBio,
 };

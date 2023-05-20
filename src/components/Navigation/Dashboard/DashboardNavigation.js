@@ -4,16 +4,20 @@ import { Wrapper } from "./DashboardNavigation.styles";
 
 import { dashboard_links } from "../../../utils/routes_constants";
 import { useAuthenticationContext } from "../../../context/AuthenticationContext";
-const DashboardNavigation = () => {
+const DashboardNavigation = ({ isMobile }) => {
 	const navigate = useNavigate();
 	const { logoutUser } = useAuthenticationContext();
 	return (
 		<Wrapper>
 			<div className="nav-links">
 				{dashboard_links.map((i) => {
-					return (
+					return isMobile ? (
 						<Link key={i.id} to={i.path}>
 							{i.icon}
+						</Link>
+					) : (
+						<Link key={i.id} to={i.path}>
+							{i.text}
 						</Link>
 					);
 				})}

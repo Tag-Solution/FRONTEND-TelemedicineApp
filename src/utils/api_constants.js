@@ -2,6 +2,8 @@
 export const BASE_URL = "https://telemedicine-app.herokuapp.com";
 export const API_BASE_URL = BASE_URL + "/api/v1";
 
+export const API_TEST_GET = API_BASE_URL + "/test";
+
 /***************************
  * === User Actions ===
  ***************************/
@@ -9,6 +11,7 @@ export const API_BASE_URL = BASE_URL + "/api/v1";
 // Auth:
 export const API_REGISTER = BASE_URL + "/auth/register";
 export const API_LOGIN = BASE_URL + "/auth/login";
+export const API_ME = BASE_URL + "/auth/me";
 
 /***************************
  * === Website ===

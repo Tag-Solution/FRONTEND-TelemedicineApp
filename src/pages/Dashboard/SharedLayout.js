@@ -5,17 +5,23 @@ import { Wrapper } from "./SharedLayout.styles";
 import { DashboardNavigation, useWindowDimensions } from "../../components";
 
 const SharedLayout = () => {
-	const { height } = useWindowDimensions();
+	const { width, height } = useWindowDimensions();
+
+	const isMobile = width < 980;
 
 	return (
 		<Wrapper style={{ height: `${height}px` }}>
-			<DashboardNavigation></DashboardNavigation>
+			<DashboardNavigation
+				isMobile={isMobile ? true : false}
+			></DashboardNavigation>
 			<div
 				className="outlet-container"
 				style={{
-					height: `calc(${height}px - 4rem)`,
+					height: `${isMobile ? `calc(${height}px - 4rem)` : "100vh"}`,
+					paddingLeft: `${isMobile ? "0" : "12rem"}`,
 				}}
 			>
+				{/* TODO: If LOADING, show LOADING_PAGE, then OUTLET (Having user DATA) */}
 				<Outlet></Outlet>
 			</div>
 		</Wrapper>
