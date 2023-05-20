@@ -12,7 +12,8 @@ export const services = [
 	{
 		id: 1,
 		title: "Telehealth",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		description:
+			"Our app enables seamless video consultations with qualified doctors, allowing you to receive medical advice, diagnoses, and treatment plans without the need for in-person visits.",
 		images: [
 			{
 				id: 1,
@@ -25,7 +26,8 @@ export const services = [
 	{
 		id: 2,
 		title: "Mobile",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		description:
+			"With our Telemedicine App, you can access healthcare services anytime, anywhere, directly from your mobile device",
 		images: [
 			{
 				id: 1,
@@ -38,7 +40,8 @@ export const services = [
 	{
 		id: 3,
 		title: "User Portal",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		description:
+			"Provides a convenient and intuitive interface for managing your healthcare needs. Schedule appointments, view medical records, and securely communicate with healthcare providers—all in one centralized location.",
 		images: [
 			{
 				id: 1,
@@ -51,7 +54,8 @@ export const services = [
 	{
 		id: 4,
 		title: "Support",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		description:
+			"We pride ourselves on offering exceptional customer support to ensure a smooth and satisfying experience. Our dedicated support team is available to assist you with any questions or concerns you may have, providing personalized assistance every step of the way.",
 		images: [
 			{
 				id: 1,
@@ -69,8 +73,8 @@ export const services = [
 
 // Landing:
 export const landingPage = {
-	title: "Lorem ipsum dolor sit.",
-	text: "Lorem ipsum dolor sit amet amet, adipisicing elit. Molestiasdeleniti repellendus illo libero corrupti ratione dolore tempora architecto?",
+	title: "Welcome to our Telemedicine App!",
+	text: "Providing convenient and accessible medical consultations from the comfort of your own home.",
 	images: [
 		{
 			id: 1,
@@ -83,7 +87,8 @@ export const landingPage = {
 
 // Services:
 export const servicesPage = {
-	title: "Lorem ipsum dolor sit amet consectetur.",
-	text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas enim vero reiciendis dicta porro maiores modi?",
+	title:
+		"Take control of your well-being and experience the future of medical care with us.",
+	text: "Whether you need a routine check-up, have a specific health concern, or require follow-up care, our Telemedicine App is here to simplify your healthcare journey.",
 	servicesList: services,
 };
