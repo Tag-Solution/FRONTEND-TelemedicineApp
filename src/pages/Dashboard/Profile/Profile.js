@@ -1,19 +1,15 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-
+import React from "react";
 import { Wrapper } from "./Profile.styles";
+
 import { ProfileHeader, ProfileBio } from "../../../components/";
+
 import { userEntity } from "../../../utils/temp/entities";
-import { API_TEST_GET } from "../../../utils/api_constants";
-import setAuthHeader from "../../../services/axios/config/auth-header";
+import { useUserContext } from "../../../context/UserContext";
 
 const Profile = () => {
-	useEffect(() => {
-		axios
-			.get(API_TEST_GET, setAuthHeader())
-			.then((res) => console.log(res.data))
-			.catch((e) => console.log(e));
-	}, []);
+	const { userInContext } = useUserContext();
+
+	// if loading, if error, then:
 	return (
 		<Wrapper>
 			<div className="outlet-section">
@@ -21,6 +17,7 @@ const Profile = () => {
 				<hr />
 				<ProfileBio data={userEntity}></ProfileBio>
 				<hr style={{ width: "85%", margin: "0 auto" }} />
+				<h2>{userInContext}</h2>
 			</div>
 		</Wrapper>
 	);
