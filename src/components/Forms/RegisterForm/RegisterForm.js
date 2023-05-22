@@ -18,9 +18,7 @@ const RegisterForm = () => {
 					lastName: "",
 					email: "",
 					password: "",
-					photo:
-						"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F08%2Fsimp_homersingle08_f_hires2-2000.jpg",
-					roleId: 1,
+					roleId: 2,
 				}}
 				validationSchema={Yup.object({
 					firstName: Yup.string()
