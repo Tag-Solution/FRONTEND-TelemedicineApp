@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Field } from "formik";
 
-const PasswordInput = () => {
+const PasswordInput = ({ isDisabled }) => {
 	const [show, setShow] = useState(false);
 
 	const toggleShow = () => {
@@ -14,7 +14,11 @@ const PasswordInput = () => {
 		<Wrapper className="single-input">
 			<label htmlFor="password">Contraseña</label>
 			<div className="input-container">
-				<Field name="password" type={show ? "text" : "password"} />
+				<Field
+					name="password"
+					type={show ? "text" : "password"}
+					disabled={isDisabled}
+				/>
 				<span onClick={() => toggleShow()}>
 					{show ? (
 						<AiOutlineEyeInvisible></AiOutlineEyeInvisible>
