@@ -32,14 +32,7 @@ const RegisterForm = () => {
 						.required("Required"),
 				})}
 				onSubmit={(values) => {
-					registerUser(values)
-						.then((response) => {
-							let res = response.data;
-							alert("JWT Recibida: " + res.jwt);
-						})
-						.catch((error) => {
-							console.log(error);
-						});
+					registerUser(values);
 				}}
 			>
 				<Form className="main-form">
@@ -47,26 +40,38 @@ const RegisterForm = () => {
 						{/* Email */}
 						<div className="single-input">
 							<label htmlFor="email">Email</label>
-							<Field name="email" placeholder="E-mail" />
+							<Field
+								name="email"
+								placeholder="E-mail"
+								disabled={isAuthenticating}
+							/>
 							<ErrorMessage name="email" component="div" />
 						</div>
 
 						{/* Password */}
-						<PasswordInput></PasswordInput>
+						<PasswordInput isDisabled={isAuthenticating}></PasswordInput>
 					</div>
 
 					<div className="input-block">
 						{/* First_Name */}
 						<div className="single-input">
 							<label htmlFor="firstName">Nombre</label>
-							<Field name="firstName" placeholder="First Name" />
+							<Field
+								name="firstName"
+								placeholder="First Name"
+								disabled={isAuthenticating}
+							/>
 							<ErrorMessage name="firstName" component="div" />
 						</div>
 
 						{/* Last_Name */}
 						<div className="single-input">
 							<label htmlFor="lastName">Apellido</label>
-							<Field name="lastName" placeholder="Ej: Fulanito" />
+							<Field
+								name="lastName"
+								placeholder="Ej: Fulanito"
+								disabled={isAuthenticating}
+							/>
 							<ErrorMessage name="lastName" component="div" />
 						</div>
 					</div>

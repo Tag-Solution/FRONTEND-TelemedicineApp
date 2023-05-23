@@ -10,7 +10,6 @@ import PasswordInput from "../Inputs/PasswordInput/PasswordInput";
 
 const LoginForm = () => {
 	const { loginUser, isAuthenticating } = useAuthenticationContext();
-
 	return (
 		<Wrapper className="form-container">
 			<Formik
@@ -32,12 +31,16 @@ const LoginForm = () => {
 						{/* Username */}
 						<div className="single-input">
 							<label htmlFor="username">Username</label>
-							<Field name="username" placeholder="E-mail" />
+							<Field
+								name="username"
+								placeholder="E-mail"
+								disabled={isAuthenticating}
+							/>
 							<ErrorMessage name="username" component="div" />
 						</div>
 
 						{/* Password */}
-						<PasswordInput></PasswordInput>
+						<PasswordInput isDisabled={isAuthenticating}></PasswordInput>
 					</div>
 					<button
 						type="submit"

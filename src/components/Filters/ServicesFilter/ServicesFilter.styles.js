@@ -29,14 +29,12 @@ export const Wrapper = styled.article`
 		}
 	}
 	@media screen and (min-width: 768px) {
-		width: 70%;
+		width: 78%;
 		.btn-container {
 			grid-template-columns: repeat(5, 1fr);
 		}
 	}
 	@media screen and (min-width: 980px) {
 		display: none;
-	}
-	@media screen and (min-width: 1150px) {
 	}
 `;

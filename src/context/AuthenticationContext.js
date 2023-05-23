@@ -18,7 +18,7 @@ export const AuthenticationProvider = ({ children }) => {
 		axios
 			.post(API_REGISTER, body, {
 				validateStatus: function (status) {
-					return status < 500;
+					return status === 201;
 				},
 			})
 			.then((response) => {
@@ -29,7 +29,7 @@ export const AuthenticationProvider = ({ children }) => {
 			})
 			.catch((error) => {
 				setIsLoading(false);
-				console.log(error);
+				alert(error.message);
 			});
 	};
 
@@ -39,7 +39,7 @@ export const AuthenticationProvider = ({ children }) => {
 		axios
 			.post(API_LOGIN, body, {
 				validateStatus: function (status) {
-					return status < 500;
+					return status === 202;
 				},
 			})
 			.then((response) => {
@@ -50,7 +50,7 @@ export const AuthenticationProvider = ({ children }) => {
 			})
 			.catch((error) => {
 				setIsLoading(false);
-				console.log(error);
+				alert(error.message);
 			});
 	};
 
