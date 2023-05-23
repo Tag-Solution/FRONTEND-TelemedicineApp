@@ -17,7 +17,7 @@ import {
 	Calls,
 	Settings,
 } from "./pages";
-import { Sidebar, Navbar } from "./components";
+import { Sidebar, Navbar, Footer } from "./components";
 
 import { useUserContext } from "./context/UserContext";
 
@@ -93,6 +93,7 @@ function App() {
 					<Route path="*" element={<SharedLayout></SharedLayout>}></Route>
 				)}
 			</Routes>
+			<Footer></Footer>
 		</>
 	);
 }

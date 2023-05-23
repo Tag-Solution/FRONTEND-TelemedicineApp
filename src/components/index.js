@@ -1,6 +1,6 @@
 import Logotype from "./Logotype/Logotype";
 
-import { Sidebar, Navbar, DashboardNavigation } from "./Navigation";
+import { Sidebar, Navbar, DashboardNavigation, Footer } from "./Navigation";
 
 import { FilterButton } from "./Button";
 
@@ -21,6 +21,7 @@ export {
 	Sidebar,
 	Navbar,
 	DashboardNavigation,
+	Footer,
 	FilterButton,
 	ServicesFilter,
 	RegisterForm,
