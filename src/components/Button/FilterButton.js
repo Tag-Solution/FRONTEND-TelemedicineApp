@@ -19,7 +19,7 @@ export const Wrapper = styled.button`
 	/* Font */
 	font-family: var(--FontWork);
 	color: var(--ColorBlack-2);
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	letter-spacing: 0.7px;
 	cursor: pointer;
 	transition: var(--TransitionMain);
